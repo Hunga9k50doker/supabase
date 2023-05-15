@@ -10,11 +10,11 @@ module.exports = {
   theme: {
     colors: {
       ...colors,
-      primary: "#2b825b",
+      primary: "blue",
       secondary: 'blue',
       blackColor: "#11181c",
       textColor: "#687076",
-      lightGreenColor: "#3fcf8e",
+      lightGreenColor: "#00acee",
       colorScale3Color: "#f1f3f5",
       bgGrayColor: "#889096",
       bgBlackColor: "#2e2e2e",
@@ -31,13 +31,14 @@ module.exports = {
         1200: '#11181c'
       },
       brand: {
-        600: '#ccc'
+        600: '#00acee'
       },
       base: '#687076',
     },
       extend: {
         fonsize: {
-         'fs-12':'12px',
+          'fs-12': '12px',
+          'fs-30': '30px',
        }
       },
   },

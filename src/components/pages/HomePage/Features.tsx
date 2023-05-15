@@ -13,12 +13,12 @@ const Features = () => {
           services.map((service, index) => (
             <div className="mb-10 space-y-4 md:mb-0" key={index}>
               <div className="flex items-center">
-                <div className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-scale-1200 text-scale-100 ">
+                <div className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-scale-1200 text-white ">
                   {service.icon}
                 </div>
-                <dt className="text-scale-1200 ml-4 flex flex-row xl:flex-col">
+                <div className="text-scale-1200 ml-4 flex flex-row xl:flex-col dark:text-white">
                   {service.title}
-                </dt>
+                </div>
               </div>
               <p className="text-scale-1100 dark:text-white">
                 {service.description}

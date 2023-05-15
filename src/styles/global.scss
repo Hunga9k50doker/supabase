@@ -1,8 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+// @import '../assets/fonts/custom-font.woff2';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+// @font-face {
+//     font-family: "Custom-font";
+//     src: local("Custom-font"),
+//         url("../assets/fonts/custom-font.woff2") format("truetype");
+//     font-weight: bold;
+// }
 
+*{
+  // margin: 0;
+  // padding: 0;
+  // box-sizing: border-box;
+  font-family:  'Custom-font','Open Sans','Helvetica Neue','Helvetica','Arial','sans-serif';
+  //   font-style: normal;
+      // font-stretch: 100%;
+}
 body {
-  
+ 
+}
+
+.h2{
+    font-size:30px;
+    color: '#11181c';
+}
+
+.h6{
+    color: #11181c ;
+    margin: 0px 0px 16px;
+    line-height: 24px;
+    font-weight: 500;
+    // font-family: 'Open Sans','Helvetica Neue','Helvetica','Arial','sans-serif';
+}
+
+.p{
+    font-size: 14px;
+    line-height:20px;
+    color:
+            #687076;
+            margin: 0px 0px 16px;
 }

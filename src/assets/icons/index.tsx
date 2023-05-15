@@ -12,3 +12,8 @@ export { default as FunctionIcon } from "./FunctionIcon";
 export { default as StorageIcon } from "./StorageIcon";
 export { default as DatabaseIcon } from "./DatabaseIcon";
 export { default as ArrowRightIcon } from "./ArrowRightIcon";
+export { default as MessageIcon } from "./MessageIcon";
+export { default as TwitterBlueIcon } from "./TwitterBlueIcon";
+export { default as ArrowNextIcon } from "./ArrowNextIcon";
+export { default as ArrowPreIcon } from "./ArrowPreIcon";
+export { default as GithubStrokeIcon } from "./GithubStrokeIcon";

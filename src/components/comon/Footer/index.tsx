@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
+import Image from "next/image";
 import { categoriesFooter } from "@/constants/CategoriesFooter";
 import {
   TwitterIcon,
@@ -12,7 +13,7 @@ import {
   LightThemeIcon,
   DarkThemeIcon,
 } from "@/assets/icons";
-
+import { Logo, LogoDark } from "@/assets/imgs";
 const Footer = () => {
   const { theme, setTheme, systemTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -24,8 +25,7 @@ const Footer = () => {
     return null;
   }
   const handleTheme = () => {
-    if (theme === systemTheme) setTheme("dark");
-    else setTheme(theme === "light" ? "dark" : "light");
+    setTheme(theme === "light" ? "dark" : "light");
   };
   console.log(theme);
   return (
@@ -33,7 +33,9 @@ const Footer = () => {
       <div className="sm:py-18 container relative mx-auto px-6 py-16 md:py-24 lg:px-16 lg:py-24 xl:px-20">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
-            <Link href="/">Logo</Link>
+            <Link href="/">
+              <Image alt="logo" src={theme === "light" ? Logo : LogoDark} />
+            </Link>
             <div className="flex space-x-5">
               <a
                 href="https://twitter.com/supabase"
@@ -96,7 +98,7 @@ const Footer = () => {
           <div className="flex items-center">
             <LightThemeIcon />
             <button
-              onClick={handleTheme}
+              onClick={() => handleTheme()}
               type="button"
               aria-pressed="false"
               className="

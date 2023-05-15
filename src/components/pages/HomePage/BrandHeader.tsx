@@ -13,7 +13,7 @@ const BrandHeader = () => {
             <div className="md:mx-auto md:max-w-2xl lg:col-span-6 lg:flex lg:items-center lg:text-left">
               <div className="space-y-12 sm:mx-auto md:w-3/4 lg:mx-0 lg:w-full">
                 <div>
-                  <h1 className=" text-scale-1200 text-2xl sm:text-3xl sm:leading-none lg:text-4xl xl:text-5xl ">
+                  <h1 className=" text-scale-1200 text-2xl sm:text-3xl sm:leading-none dark:text-white lg:text-4xl xl:text-5xl ">
                     <span className="block">Build in a weekend.</span>
                     <span className="text-lightGreenColor block md:ml-0">
                       Scale to millions.
