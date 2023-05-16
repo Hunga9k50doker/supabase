@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const colors = require('tailwindcss/colors')
+
 module.exports = {
   darkMode: "class",
   content: [
@@ -10,36 +11,63 @@ module.exports = {
   theme: {
     colors: {
       ...colors,
-      primary: "blue",
-      secondary: 'blue',
+      primary: "#0ea5e9",
+      white: '#fff',
+      black:'#000',
       blackColor: "#11181c",
       textColor: "#687076",
-      lightGreenColor: "#00acee",
+      secondary: "#00acee",
       colorScale3Color: "#f1f3f5",
       bgGrayColor: "#889096",
       bgBlackColor: "#2e2e2e",
-      bgDarkThumbColor: "#232323",
+      bgDarkThumbColor: "#1C1C1C",
       scale: {
-        100:'#fbfdfc',
+        primary: "blue",
+        secondary: "#00acee",
+        50:'#f8f9fa',
+        100: '#fbfdfc',
+        150: '#ededed',
+        200: '#f1f3f5',
+        250: '#889096',
+        300: '#f1f3f5',
         400: '#eceef0',
-        500:'#e5e7eb', 
-        600: '#f1f3f5',
+        500:'#e6e8eb', 
+        600: '#dfe3e6',
         700: '#e5e7eb',
         800:'#c1c8cd',
+        900:'#d7dbdf',
         1000: '#7e868c',
-        1100:'#687076',
-        1200: '#11181c'
+        1100: '#687076',
+        1150: '#707070',
+        1200: '#11181c',
+        1250: '#282828',
+        1300: '#232323',
+      },
+      yelow: {
+        900:'#f5d90a'
       },
       brand: {
-        600: '#00acee'
+        700: '#8ed2af',
+        600: '#00acee',
+        800: '#34b27b',
+        900:'#3fcf8e'
       },
       base: '#687076',
     },
       extend: {
-        fonsize: {
+        fontSize: {
+          'xs': '12px',
+          'sm': '14px',
+          'lg':'18px',
+          'base': '18px',
           'fs-12': '12px',
+          'fs-14':'14px',
           'fs-30': '30px',
-       }
+        },
+        lineHeight: {
+          'xs': '1rem',
+          '4xl': '1rem',
+        }
       },
   },
   plugins: [],

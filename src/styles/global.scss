@@ -28,6 +28,9 @@ body {
     font-size:30px;
     color: '#11181c';
 }
+.h3{
+    font-size: 24px;
+}
 
 .h6{
     color: #11181c ;
@@ -43,4 +46,19 @@ body {
     color:
             #687076;
             margin: 0px 0px 16px;
+}
+
+.span{
+    font-size: 14px;
+}
+
+.pricing_page
+{
+    .h2,.p{
+        margin-top: 8px !important;
+        margin-bottom: 16px;
+    }
+    .p{
+        font-size: 18px;
+    }
 }

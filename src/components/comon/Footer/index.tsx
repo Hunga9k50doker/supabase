@@ -27,9 +27,8 @@ const Footer = () => {
   const handleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
-  console.log(theme);
   return (
-    <footer className="border-scale-500 dark:border-scale-600 border-t">
+    <footer className="border-scale-500 dark:border-scale-600 border-t bg-scale-50 dark:bg-bgDarkThumbColor">
       <div className="sm:py-18 container relative mx-auto px-6 py-16 md:py-24 lg:px-16 lg:py-24 xl:px-20">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
@@ -80,7 +79,7 @@ const Footer = () => {
                         <li key={index}>
                           <a
                             href="/database"
-                            className="text-sm transition-colors text-textColor hover:text-blackColor  "
+                            className="text-xs transition-colors text-textColor hover:text-blackColor  "
                           >
                             {item.title}
                           </a>

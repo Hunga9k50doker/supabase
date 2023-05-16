@@ -1,12 +1,3 @@
-"use client";
-
-import {
-  DatabaseIcon,
-  FunctionIcon,
-  StorageIcon,
-  AuthenticationIcon,
-} from "@/assets/icons";
-import React from "react";
 interface ServiceBuildProps {
   title: string;
   description: string;

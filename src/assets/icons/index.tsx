@@ -17,3 +17,5 @@ export { default as TwitterBlueIcon } from "./TwitterBlueIcon";
 export { default as ArrowNextIcon } from "./ArrowNextIcon";
 export { default as ArrowPreIcon } from "./ArrowPreIcon";
 export { default as GithubStrokeIcon } from "./GithubStrokeIcon";
+export { default as CopyIcon } from "./CopyIcon";
+export { default as CheckIcon } from "./CheckIcon";

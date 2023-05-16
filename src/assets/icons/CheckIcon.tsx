@@ -1,6 +1,6 @@
 import React from "react";
 
-const ArrowPreIcon = () => {
+const CheckIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -9,14 +9,15 @@ const ArrowPreIcon = () => {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeLinecap="round"
+      stroke-width="3"
+      stroke-linecap="round"
       stroke-linejoin="round"
-      className="sbui-icon "
+      className="sbui-icon text-primary h-4 w-4 "
+      aria-hidden="true"
     >
-      <line x1="19" y1="12" x2="5" y2="12"></line>
-      <polyline points="12 19 5 12 12 5"></polyline>
+      <polyline points="20 6 9 17 4 12"></polyline>
     </svg>
   );
 };
 
-export default ArrowPreIcon;
+export default CheckIcon;

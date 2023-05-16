@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import { Felicis, Coatue, YC, Mozilla } from "@/assets/imgs";
-import Button from "@/components/Button";
 import { BookIcon } from "@/assets/icons";
+import ButtonLarge from "@/components/ButtonLarge";
 
 const BrandHeader = () => {
   return (
@@ -13,14 +13,14 @@ const BrandHeader = () => {
             <div className="md:mx-auto md:max-w-2xl lg:col-span-6 lg:flex lg:items-center lg:text-left">
               <div className="space-y-12 sm:mx-auto md:w-3/4 lg:mx-0 lg:w-full">
                 <div>
-                  <h1 className=" text-scale-1200 text-2xl sm:text-3xl sm:leading-none dark:text-white lg:text-4xl xl:text-5xl ">
-                    <span className="block">Build in a weekend.</span>
-                    <span className="text-lightGreenColor block md:ml-0">
+                  <h1 className=" text-scale-1200 text-2xl sm:text-3xl sm:leading-none dark:text-white lg:text-4xl xl:text-5xl">
+                    <p className="block">Build in a weekend.</p>
+                    <p className="text-secondary dark:text-secondary block md:ml-0">
                       Scale to millions.
-                    </span>
+                    </p>
                   </h1>
                   <div>
-                    <p className="p mt-1.5 text-sm sm:mt-5 sm:text-base lg:text-lg ">
+                    <p className="p mt-1.5 text-xs sm:mt-5 sm:text-base lg:text-lg ">
                       Supabase is an open source Firebase alternative. Start
                       your project with a Postgres database, Authentication,
                       instant APIs, Edge Functions, Realtime subscriptions, and
@@ -30,21 +30,17 @@ const BrandHeader = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <a href="https://app.supabase.com">
-                    <Button
-                      className="border truncate relative cursor-pointer inline-flex items-center space-x-2 text-center font-regular transition ease-out duration-200 rounded outline-none transition-all outline-0 focus-visible:outline-4 focus-visible:outline-offset-1   bg-primary hover:bg-lightGreenColor text-white bordershadow-primary hover:bordershadow-lightGreenColor dark:bordershadow-primary dark:hover:bordershadow-primary focus-visible:outline-brand-600  shadow-sm text-sm leading-4 px-3 py-2 text-white"
+                    <ButtonLarge
+                      className="bg-scale-primary text-white hover:bg-scale-secondary dark:bg-scale-primary dark:hover:bg-scale-secondary"
                       type="button"
                       title="Start your project"
-                    ></Button>
+                    ></ButtonLarge>
                   </a>
                   <a href="/docs">
-                    <Button
-                      className="border gap-2 truncate relative cursor-pointer inline-flex items-center space-x-2 text-center font-regular transition ease-out duration-200 rounded outline-none transition-all outline-0 focus-visible:outline-4 focus-visible:outline-offset-1   text-scale-1200 bg-scale-100 hover:bg-scale-300 bordershadow-scale-600 hover:bordershadow-scale-700 dark:bordershadow-scale-700 hover:dark:bordershadow-scale-800 dark:bg-scale-500 dark:hover:bg-scale-600 focus-visible:outline-brand-600  shadow-sm text-sm leading-4 px-3 py-2"
-                      type="button"
-                      title=""
-                    >
+                    <ButtonLarge className="" type="button" title="">
                       <BookIcon />
                       Documentation
-                    </Button>
+                    </ButtonLarge>
                   </a>
                 </div>
                 <div className="flex flex-col gap-4">

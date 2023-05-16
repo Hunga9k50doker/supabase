@@ -8,7 +8,7 @@ const TwitterIcon = () => {
       height="12"
       viewBox="0 0 24 24"
       fill="white"
-      stroke-linecap="round"
+      strokeLinecap="round"
       stroke-linejoin="round"
       className="sbui-icon "
     >
