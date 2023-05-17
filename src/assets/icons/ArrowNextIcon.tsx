@@ -11,7 +11,7 @@ const ArrowNextIcon = (props: any) => {
       fill="none"
       stroke="currentColor"
       strokeLinecap="round"
-      stroke-linejoin="round"
+      strokeLinejoin="round"
       className="sbui-icon "
     >
       <line x1="5" y1="12" x2="19" y2="12"></line>

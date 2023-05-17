@@ -1,6 +1,6 @@
 import React from "react";
 
-const DatabaseIcon = () => {
+const ThunderIcon = () => {
   return (
     <svg
       className="h-5 w-5 stroke-white dark:stroke-black "
@@ -13,10 +13,10 @@ const DatabaseIcon = () => {
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="1.5"
-        d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"
+        d="M13 10V3L4 14h7v7l9-11h-7z"
       ></path>
     </svg>
   );
 };
 
-export default DatabaseIcon;
+export default ThunderIcon;

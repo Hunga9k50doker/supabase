@@ -46,6 +46,9 @@ body {
     color:
             #687076;
             margin: 0px 0px 16px;
+            @media screen and (max-width: 1280px) {
+                font-size: 16px !important;
+            }
 }
 
 .span{
@@ -67,4 +70,12 @@ body {
 }
 .mb-64 {
     margin-bottom: 64px !important;
+}
+
+.fs-16{
+    font-size: 16px !important;
+}
+
+.fs-24{
+    font-size: 24px !important;
 }

@@ -10,7 +10,7 @@ const ArrowPreIcon = () => {
       fill="none"
       stroke="currentColor"
       strokeLinecap="round"
-      stroke-linejoin="round"
+      strokeLinejoin="round"
       className="sbui-icon "
     >
       <line x1="19" y1="12" x2="5" y2="12"></line>

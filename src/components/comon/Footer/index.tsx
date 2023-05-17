@@ -25,6 +25,7 @@ const Footer = () => {
     return null;
   }
   const handleTheme = () => {
+    if (theme === "system") setTheme("dark");
     setTheme(theme === "light" ? "dark" : "light");
   };
   return (
@@ -33,37 +34,37 @@ const Footer = () => {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
             <Link href="/">
-              <Image alt="logo" src={theme === "light" ? Logo : LogoDark} />
+              <Image alt="logo" src={theme === "dark" ? LogoDark : Logo} />
             </Link>
             <div className="flex space-x-5">
-              <a
+              <Link
                 href="https://twitter.com/supabase"
                 className="text-textColor hover:text-blackColor transition"
               >
                 <span className="sr-only">Twitter</span>
                 <TwitterIcon />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://github.com/supabase"
                 className="text-textColor hover:text-blackColor transition"
               >
                 <span className="sr-only">GitHub</span>
                 <GithubIcon />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://discord.supabase.com/"
                 className="text-textColor hover:text-blackColor transition"
               >
                 <span className="sr-only">Discord</span>
                 <DiscordIcon />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://youtube.com/c/supabase"
                 className="text-textColor hover:text-blackColor transition"
               >
                 <span className="sr-only">Youtube</span>
                 <YoutubeIcon />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="mt-12 grid grid-cols-1 gap-8 xl:col-span-2 xl:mt-0">

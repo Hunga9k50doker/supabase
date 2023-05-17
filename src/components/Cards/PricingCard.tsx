@@ -50,7 +50,7 @@ const PricingCard = ({ data }: dataProps) => {
                 {TypeCard.ENTERPRISE === data.id ? (
                   <div>
                     <p className="text-scale-900 ml-1 text-xs font-normal"></p>
-                    <p className="mt-2 text-scale-500 dark:text-scale-100 pb-1 text-4xl">
+                    <p className="mt-2 text-scale-1200 dark:text-scale-100 pb-1 text-4xl">
                       Contact us
                     </p>
                   </div>
@@ -59,7 +59,7 @@ const PricingCard = ({ data }: dataProps) => {
                     <p className="text-scale-250 ml-1 text-xs font-normal leading-4">
                       Starting from
                     </p>
-                    <p className="mt-2 text-scale-500 dark:text-scale-100 pb-1 text-5xl">
+                    <p className="mt-2 text-scale-1200 dark:text-scale-100 pb-1 text-5xl">
                       ${data.price}
                     </p>
                     <p className="text-scale-250 mt-0.5 text-xs leading-4">
@@ -94,7 +94,7 @@ const PricingCard = ({ data }: dataProps) => {
           </ul>
           <div className="flex flex-col gap-6 mt-auto prose">
             <div className="space-y-2 mt-12">
-              <p className="text-xs">{data.other_title}</p>
+              <p className="text-xs text-scale-1100">{data.other_title}</p>
             </div>
 
             <ButtonLarge

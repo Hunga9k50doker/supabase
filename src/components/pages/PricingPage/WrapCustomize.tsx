@@ -34,7 +34,7 @@ const WrapCustomize = () => {
           >
             <div className="overflow-hidden rounded-lg">
               <Image
-                src={theme === "light" ? item.image : item.image_dark}
+                src={theme === "dark" ? item.image_dark : item.image}
                 alt={item.title}
                 width={300}
                 height={170}
@@ -46,7 +46,7 @@ const WrapCustomize = () => {
               </p>
               <div className="flex items-center gap-2 mt-2">
                 <Image
-                  src={theme === "light" ? item.icon : item.icon_dark}
+                  src={theme === "dark" ? item.icon_dark : item.icon}
                   alt={item.title}
                   width={14}
                   height={14}

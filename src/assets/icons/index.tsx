@@ -23,3 +23,7 @@ export { default as CheckCircleIcon } from "./CheckCircleIcon";
 export { default as SubtractCircleIcon } from "./SubtractCircleIcon";
 export { default as QuestionIcon } from "./QuestionIcon";
 export { default as InforIcon } from "./InforIcon";
+export { default as MenuHambugerIcon } from "./MenuHambugerIcon";
+export { default as CloseIcon } from "./CloseIcon";
+export { default as ThunderIcon } from "./ThunderIcon";
+export { default as PostgresqlIcon } from "./PostgresqlIcon";

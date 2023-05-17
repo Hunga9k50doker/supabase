@@ -37,9 +37,9 @@ const CostControl = () => {
           <Image
             className="w-full"
             src={
-              theme === "light"
-                ? "https://supabase.com/images/pricing/spend-cap-light.png"
-                : "https://supabase.com/images/pricing/spend-cap.png"
+              theme === "dark"
+                ? "https://supabase.com/images/pricing/spend-cap.png"
+                : "https://supabase.com/images/pricing/spend-cap-light.png"
             }
             alt="not found"
             width={448}

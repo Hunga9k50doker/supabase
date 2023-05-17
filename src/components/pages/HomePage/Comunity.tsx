@@ -15,6 +15,17 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
+const breakpoints = {
+  640: {
+    slidesPerView: 2,
+  },
+  768: {
+    slidesPerView: 3,
+  },
+  1024: {
+    slidesPerView: 5,
+  },
+};
 const Comunity = () => {
   return (
     <div className="w-full bg-scale-50 dark:bg-bgDarkThumbColor">
@@ -45,7 +56,7 @@ const Comunity = () => {
         </div>
         <div className="mt-6 cursor-move lg:-mr-32 lg:-ml-32">
           <Swiper
-            slidesPerView={5}
+            breakpoints={breakpoints}
             loop={true}
             navigation={{
               nextEl: ".next-swiper",
@@ -66,12 +77,9 @@ const Comunity = () => {
                         <div className="relative flex items-center gap-2">
                           <div className="h-10 w-10 rounded-full border dark:border-gray-600">
                             <span className="block w-initial h-initial bg-none opacity-1 p-0 m-0 bỏrder-0 relative">
-                              <Link
-                                href={item.twitter_url}
-                                className="w-[20px] h-[20px] absolute top-[-5px] left-[-5px] z-10 bg-brand-600 rounded-full border-white flex items-center justify-center"
-                              >
+                              <p className="w-[20px] h-[20px] absolute top-[-5px] left-[-5px] z-10 bg-brand-600 rounded-full border-white flex items-center justify-center">
                                 {item.icon}
-                              </Link>
+                              </p>
                               <Image
                                 width={38}
                                 height={38}

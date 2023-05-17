@@ -13,7 +13,7 @@ const ManageData = () => {
       <div className="grid grid-cols-12">
         <div className="sbui-tabs--alt col-span-12 lg:col-span-7">
           <iframe
-            className="rounded"
+            className="rounded 2xl:w-[560px] 2xl:h-[315px] w-full h-[378px] lg:w-[400px] sm:h-[278px] "
             allow="autoplay; modestbranding; encrypted-media"
             width="560"
             height="315"
@@ -114,9 +114,9 @@ const ManageData = () => {
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
-                        stroke-width="2"
+                        strokeWidth="2"
                         strokeLinecap="round"
-                        stroke-linejoin="round"
+                        strokeLinejoin="round"
                         className="sbui-icon "
                       >
                         <polyline points="9 18 15 12 9 6"></polyline>

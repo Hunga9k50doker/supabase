@@ -11,9 +11,9 @@ const SubtractCircleIcon = (props: any) => {
     >
       <path
         fill="currentColor"
-        fill-rule="evenodd"
+        fillRule="evenodd"
         d="M9 18A9 9 0 1 0 9 0a9 9 0 0 0 0 18ZM5.534 9.534h6.804v-1H5.534v1Z"
-        clip-rule="evenodd"
+        clipRule="evenodd"
       ></path>
     </svg>
   );

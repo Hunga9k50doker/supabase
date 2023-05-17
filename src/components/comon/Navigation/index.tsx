@@ -1,15 +1,22 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { DropdownIcon, StarIcon } from "@/assets/icons";
+import {
+  DropdownIcon,
+  StarIcon,
+  MenuHambugerIcon,
+  CloseIcon,
+} from "@/assets/icons";
 import ButtonSmall from "@/components/ButtonSmall";
 import Image from "next/image";
 import { Logo, LogoDark } from "@/assets/imgs";
 import { useTheme } from "next-themes";
-
+import { categoriesNav } from "@/constants/CategoriesNav";
+import NavigationMobile from "@/components/NavigationMobile";
 const Navigation = () => {
   const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const [isOpenMenu, setIsOpenMenu] = useState(false);
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -17,42 +24,16 @@ const Navigation = () => {
   if (!mounted) {
     return null;
   }
-  const categories = [
-    {
-      title: "Products",
-      path: "#",
-      icon: <DropdownIcon />,
-    },
-    {
-      title: "Developers",
-      path: "#",
-      icon: <DropdownIcon />,
-    },
-    {
-      title: "Pricing",
-      path: "/pricing",
-      icon: "",
-    },
-    {
-      title: "Docs",
-      path: "#",
-      icon: "",
-    },
-    {
-      title: "Blog",
-      path: "#",
-      icon: "",
-    },
-  ];
+
   return (
-    <nav className="flex items-center justify-center border-scale-400 border-b backdrop-blur-sm transition-opacity false dark:border-scale-1250 dark:bg-bgDarkThumbColor">
-      <div className="flex flex-1 sm:items-stretch lg:justify-between relative h-16 mx-auto lg:container lg:px-16 xl:px-20 border-color">
+    <nav className="relative z-10 flex items-center justify-center border-scale-400 border-b backdrop-blur-sm transition-opacity false dark:border-scale-1250 dark:bg-bgDarkThumbColor">
+      <div className="flex flex-1 sm:items-stretch hidden lg:flex lg:justify-between relative h-16 mx-auto lg:container lg:px-16 xl:px-20 border-color">
         <div className="flex items-center">
           <Link href="/">
-            <Image alt="logo" src={theme === "light" ? Logo : LogoDark} />
+            <Image alt="logo" src={theme === "dark" ? LogoDark : Logo} />
           </Link>
           <div className="hidden pl-4 sm:ml-6 sm:space-x-4 lg:flex">
-            {categories.map((category, index) => (
+            {categoriesNav.map((category, index) => (
               <div key={index}>
                 <Link
                   href={category.path}
@@ -108,6 +89,27 @@ const Navigation = () => {
           </a>
         </div>
       </div>
+      <div className="flex flex-1 sm:items-stretch lg:hidden lg:justify-between relative h-16 mx-auto lg:container lg:px-16 xl:px-20 border-color">
+        <div className="absolute inset-y-0 left-0 flex items-center px-4">
+          <button
+            onClick={() => setIsOpenMenu(!isOpenMenu)}
+            className="text-scale-900 focus:ring-brand-900 dark:bg-scale-200 dark:hover:bg-scale-300 inline-flex items-center justify-center rounded-md bg-gray-50 p-2 hover:bg-white focus:outline-none focus:ring-2 focus:ring-inset false"
+          >
+            <span className="sr-only">Open main menu</span>
+            {!isOpenMenu ? <MenuHambugerIcon /> : <CloseIcon />}
+          </button>
+        </div>
+        <div className="flex items-center justify-center flex-1 sm:items-stretch lg:justify-between">
+          <div className="flex items-center flex-shrink-0">
+            <Link href="/">
+              <Image alt="logo" src={theme === "dark" ? LogoDark : Logo} />
+            </Link>
+          </div>
+        </div>
+      </div>
+      {isOpenMenu && (
+        <NavigationMobile setIsOpenMenu={() => setIsOpenMenu(false)} />
+      )}
     </nav>
   );
 };

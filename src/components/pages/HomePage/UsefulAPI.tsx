@@ -13,8 +13,8 @@ const UsefulAPI = () => {
       <div className="grid grid-cols-12 lg:gap-16">
         <div className="col-span-12 pb-8 lg:col-span-5 xl:col-span-5">
           <h2 className="h3">Instant APIs that do the hard work for you</h2>
-          <div className="p">
-            <p className="lg:text-lg">
+          <div className="mt-4">
+            <p className="lg:text-lg text-base">
               We introspect your database to provide APIs instantly. Stop
               building repetitive CRUD endpoints and focus on your product.
             </p>
@@ -62,7 +62,7 @@ const UsefulAPI = () => {
             <div
               role="tablist"
               aria-orientation="horizontal"
-              className="flex space-x-1 overflow-auto whitespace-nowrap no-scrollbar mask-fadeout-right"
+              className="flex space-x-1 overflow-auto whitespace-nowrap no-scrollbar mask-fadeout-right pb-2"
               data-orientation="horizontal"
             >
               {usefulAPIButton.map((item, index) => (
