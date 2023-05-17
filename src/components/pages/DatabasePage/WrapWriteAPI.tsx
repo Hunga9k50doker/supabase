@@ -7,7 +7,7 @@ import { ArrowNextIcon, CopyIcon } from "@/assets/icons";
 import Link from "next/link";
 import Tag from "@/components/Tag";
 import TabList from "@/components/TabList";
-import { tabListAPI } from "@/constants/Tablist";
+import { tabListAPI } from "@/constants/TabList";
 const WrapWriteAPI = () => {
   const tags = ["Python", "Dart", "C++", "Kotlin"];
   return (

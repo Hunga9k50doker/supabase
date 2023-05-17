@@ -1,6 +1,6 @@
 import React from "react";
 import TabList from "@/components/TabList";
-import { tabListTableEditor } from "@/constants/Tablist";
+import { tabListTableEditor } from "@/constants/TabList";
 import Image from "next/image";
 import WrapTitle from "@/components/WrapTitle";
 import { ArrowRightIcon, TwitterBlueIcon } from "@/assets/icons";

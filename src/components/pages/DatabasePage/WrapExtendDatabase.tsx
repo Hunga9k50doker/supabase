@@ -3,7 +3,7 @@ import WrapTitle from "@/components/WrapTitle";
 import React from "react";
 import Tag from "@/components/Tag";
 import { ArrowNextIcon, CopyIcon } from "@/assets/icons";
-import { tabListEtandDatabase } from "@/constants/Tablist";
+import { tabListEtandDatabase } from "@/constants/TabList";
 import TabList from "@/components/TabList";
 import ButtonLarge from "@/components/ButtonLarge";
 const WrapExtendDatabase = () => {

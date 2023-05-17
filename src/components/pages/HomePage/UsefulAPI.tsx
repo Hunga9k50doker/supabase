@@ -3,7 +3,7 @@
 import React from "react";
 import { ArrowRightIcon, CopyIcon } from "@/assets/icons";
 import { usefulAPI } from "@/constants/UsefulAPI";
-import { tabListUsefulAPI } from "@/constants/Tablist";
+import { tabListUsefulAPI } from "@/constants/TabList";
 import TabList from "@/components/TabList";
 
 const UsefulAPI = () => {
