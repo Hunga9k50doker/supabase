@@ -1,5 +1,5 @@
 import { CheckIcon } from "@/assets/icons";
-import { PricingCard as TypeCard } from "@/configs";
+import { PlanDescription as TypeCard } from "@/configs";
 import ButtonLarge from "../ButtonLarge";
 interface PricingCardProps {
   title: string;
@@ -19,7 +19,7 @@ const PricingCard = ({ data }: dataProps) => {
     <div
       className={`${
         TypeCard.PRO === data.id
-          ? "bg-primary dark:bg-primary border px-0.5 -mt-8 rounded-[6px]"
+          ? "bg-primary dark:bg-primary border dark:border-0 px-0.5 -mt-8 rounded-[6px]"
           : ""
       }`}
     >
@@ -28,10 +28,12 @@ const PricingCard = ({ data }: dataProps) => {
       )}
       <div
         className={`flex flex-col overflow-hidden ${
-          TypeCard.PRO === data.id ? "" : "border h-full rounded-[4px]"
+          TypeCard.PRO === data.id
+            ? ""
+            : "border dark:border-0 h-full rounded-[4px]"
         }`}
       >
-        <div className="dark:bg-scale-300 bg-white px-8 pt-6 rounded-tr-[4px] rounded-tl-[4px]">
+        <div className="dark:bg-scale-1300 bg-white px-8 pt-6 rounded-tr-[4px] rounded-tl-[4px]">
           <div className="mb-2 flex items-center gap-2">
             <div className="flex items-center gap-2">
               <h3 className="text-secondary dark:text-secondary text-2xl font-normal uppercase flex items-center gap-4 font-mono">
@@ -39,16 +41,16 @@ const PricingCard = ({ data }: dataProps) => {
               </h3>
             </div>
           </div>
-          <p className="text-scale-1100 my-4 h-[55px] text-sm border-b dark:border-scale-500 pb-4 lg:pr-20">
+          <p className="text-scale-1100 my-4 h-[55px] text-sm border-b dark:border-scale-1250 pb-4 lg:pr-20">
             {data.description}
           </p>
-          <div className="text-scale-1200 flex items-baseline text-5xl font-normal lg:text-4xl xl:text-4xl border-b dark:border-scale-500 pt-4 pb-8 min-h-[175px] flex-1">
+          <div className="text-scale-1200 flex items-baseline text-5xl font-normal lg:text-4xl xl:text-4xl border-b dark:border-scale-1250 pt-4 pb-8 min-h-[175px] flex-1">
             <div className="flex flex-col gap-1 justify-center">
               <div className="flex items-end gap-2 justify-center">
                 {TypeCard.ENTERPRISE === data.id ? (
                   <div>
                     <p className="text-scale-900 ml-1 text-xs font-normal"></p>
-                    <p className="mt-2 gradient-text-scale-500 dark:gradient-text-scale-100 pb-1 text-4xl">
+                    <p className="mt-2 text-scale-500 dark:text-scale-100 pb-1 text-4xl">
                       Contact us
                     </p>
                   </div>
@@ -57,7 +59,7 @@ const PricingCard = ({ data }: dataProps) => {
                     <p className="text-scale-250 ml-1 text-xs font-normal leading-4">
                       Starting from
                     </p>
-                    <p className="mt-2 gradient-text-scale-500 dark:gradient-text-scale-100 pb-1 text-5xl">
+                    <p className="mt-2 text-scale-500 dark:text-scale-100 pb-1 text-5xl">
                       ${data.price}
                     </p>
                     <p className="text-scale-250 mt-0.5 text-xs leading-4">
@@ -75,7 +77,7 @@ const PricingCard = ({ data }: dataProps) => {
           </div>
         </div>
         <div
-          className={`dark:border-scale-400 dark:bg-scale-300 flex h-full rounded-bl-[4px] rounded-br-[4px] flex-1 flex-col bg-white px-8 py-6 ${
+          className={`dark:border-scale-400 dark:bg-scale-1300 flex h-full rounded-bl-[4px] rounded-br-[4px] flex-1 flex-col bg-white px-8 py-6 ${
             TypeCard.PRO === data.id ? "mb-0.5" : ""
           }`}
         >
@@ -84,7 +86,7 @@ const PricingCard = ({ data }: dataProps) => {
             {data.benefits.map((benefit, index) => (
               <div className="flex items-center py-2 first:mt-0" key={index}>
                 <CheckIcon />
-                <span className="dark:text-scale-1200 mb-0 ml-3 ">
+                <span className="dark:text-scale-300 mb-0 ml-3 ">
                   {benefit}
                 </span>
               </div>
@@ -94,9 +96,12 @@ const PricingCard = ({ data }: dataProps) => {
             <div className="space-y-2 mt-12">
               <p className="text-xs">{data.other_title}</p>
             </div>
+
             <ButtonLarge
-              className="w-full bg-scale-primary hover:bg-scale-secondary text-white justify-center leading-4"
-              title="Get Started"
+              className="w-full bg-scale-primary dark:bg-scale-primary hover:bg-scale-secondary text-white justify-center leading-4"
+              title={
+                TypeCard.ENTERPRISE !== data.id ? "Get Started" : "Contact Us"
+              }
               type="button"
             />
           </div>

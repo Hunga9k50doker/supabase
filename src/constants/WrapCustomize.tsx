@@ -1,19 +1,23 @@
-interface ServiceProps {
+interface WrapCustomizeProps {
   id: number;
   icon: any;
+  icon_dark: any;
   title: string;
   description: string;
   image: string;
+  image_dark: string;
   price: number;
   tooltip: string;
   url: string;
 }
 
-export const wrapCustomize: Array<ServiceProps> = [
+export const wrapCustomize: Array<WrapCustomizeProps> = [
   {
     id: 1,
     icon: "https://supabase.com/images/pricing/compute-upgrade-light.svg",
+    icon_dark: "https://supabase.com/images/pricing/compute-upgrade.svg",
     image: "https://supabase.com/images/pricing/addons-compute-hero-light.png",
+    image_dark: "https://supabase.com/images/pricing/addons-compute-hero.png",
     price: 5,
     tooltip: "Starts from",
     title: "Optimized Compute",
@@ -25,6 +29,8 @@ export const wrapCustomize: Array<ServiceProps> = [
     id: 2,
     icon: "https://supabase.com/images/pricing/custom-domain-upgrade-light.svg",
     image: "https://supabase.com/images/pricing/addons-domains-hero-light.png",
+    icon_dark: "https://supabase.com/images/pricing/custom-domain-upgrade.svg",
+    image_dark: "https://supabase.com/images/pricing/addons-domains-hero.png",
     price: 10,
     tooltip: "Flat fee ",
     title: "Custom Domain",
@@ -36,6 +42,8 @@ export const wrapCustomize: Array<ServiceProps> = [
     id: 3,
     icon: "https://supabase.com/images/pricing/pitr-upgrade-light.svg",
     image: "https://supabase.com/images/pricing/addons-pitr-hero-light.png",
+    icon_dark: "https://supabase.com/images/pricing/pitr-upgrade.svg",
+    image_dark: "https://supabase.com/images/pricing/addons-pitr-hero.png",
     price: 100,
     tooltip: "Starts from",
     title: "Point in Time Recovery",

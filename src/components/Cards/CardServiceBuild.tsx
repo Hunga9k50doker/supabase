@@ -23,7 +23,7 @@ interface serviceBuildData {
 const CardServiceBuild = ({ serviceBuild }: serviceBuildData) => {
   return (
     <div className="col-span-12 lg:col-span-6 xl:col-span-4 false">
-      <div className="dark:bg-scale-1200 border-scale-400 flex h-40 flex-col justify-between rounded rounded-b-none border border-t border-r border-l bg-white p-5">
+      <div className="dark:bg-scale-1200 border-scale-400 dark:border-scale-1250 flex h-40 flex-col justify-between rounded rounded-b-none border border-t border-r border-l bg-white p-5">
         <div className="mb-4">
           <h4 className="h6 dark:text-white">{serviceBuild.title}</h4>
           <p className="p text-xs dark:text-white">
@@ -45,7 +45,7 @@ const CardServiceBuild = ({ serviceBuild }: serviceBuildData) => {
       </div>
       <div role="separator"></div>
       <div>
-        <div className=" bg-scale-100 dark:bg-scale-1250 border-scale-400 flex flex-col justify-between rounded rounded-t-none border border-b border-r border-l border-t-0 p-5">
+        <div className=" bg-scale-100 dark:bg-scale-1250 border-scale-400 dark:border-scale-1250 flex flex-col justify-between rounded rounded-t-none border border-b border-r border-l border-t-0 p-5">
           <Link
             className="text-scale-1100 hover:text-scale-1200 flex flex-row items-center text-xs"
             target="_blank"

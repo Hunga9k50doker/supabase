@@ -8,7 +8,7 @@ interface CustomerStoryCardProps {
 }
 const CustomerStoryCard = ({ image, title, url }: CustomerStoryCardProps) => {
   return (
-    <div className="relative h-full group cursor-pointer overflow-hidden border rounded-lg text-left border-scale-500 hover:border-scale-700 bg-white transition dark:bg-scale-1300">
+    <div className="relative h-full group cursor-pointer overflow-hidden border rounded-lg text-left border-scale-500 hover:border-scale-700 bg-white transition dark:bg-scale-1300 dark:border-scale-1250">
       <div className="relative box-content p-8 pb-0">
         <div className="relative h-[33px] w-auto max-w-[145px]">
           <Image

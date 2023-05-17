@@ -45,7 +45,7 @@ const Navigation = () => {
     },
   ];
   return (
-    <nav className="flex items-center justify-center border-scale-400 border-b backdrop-blur-sm transition-opacity false border-colorScale3 dark:bg-bgDarkThumbColor">
+    <nav className="flex items-center justify-center border-scale-400 border-b backdrop-blur-sm transition-opacity false dark:border-scale-1250 dark:bg-bgDarkThumbColor">
       <div className="flex flex-1 sm:items-stretch lg:justify-between relative h-16 mx-auto lg:container lg:px-16 xl:px-20 border-color">
         <div className="flex items-center">
           <Link href="/">
@@ -68,7 +68,7 @@ const Navigation = () => {
         <div className="flex items-center gap-2">
           <a href="https://github.com/supabase/supabase" target="_blank">
             <button
-              className=" relative cursor-pointer dark:hover:bg-bgBlackColor inline-flex items-center space-x-2 text-center font-regular transition ease-out duration-200 rounded outline-none transition-all outline-0 focus-visible:outline-4 focus-visible:outline-offset-1   text-scale-1200 hover:bg-scale-500 shadow-none focus-visible:outline-scale-700  text-xs px-2.5 py-1 hidden group lg:flex"
+              className=" relative cursor-pointer hover:dark:bg-bgBlackColor inline-flex items-center space-x-2 text-center font-regular transition ease-out duration-200 rounded outline-none transition-all outline-0 focus-visible:outline-4 focus-visible:outline-offset-1   text-scale-1200 hover:bg-scale-500 shadow-none focus-visible:outline-scale-700  text-xs px-2.5 py-1 hidden group lg:flex"
               type="button"
             >
               <div className="flex items-center justify-center w-4 h-4 text-brand-800">
@@ -96,12 +96,12 @@ const Navigation = () => {
             <ButtonSmall
               title="Sign in"
               type="button"
-              className="bg-scale-100 hover:bg-scale-300 hover:dark:shadow-scale-800 dark:bg-[#18181c] dark:hover:bg-scale-1100 dark:text-white text-xs"
+              className="bg-scale-100 hover:bg-scale-300 hover:dark:shadow-scale-800 dark:bg-[#18181c] hover:dark:bg-scale-1100 dark:text-white text-xs"
             ></ButtonSmall>
           </a>
           <a href="https://app.supabase.com/">
             <ButtonSmall
-              className="bg-scale-primary text-white hover:bg-scale-secondary dark:bg-scale-primary dark:hover:bg-scale-secondary"
+              className="bg-scale-primary text-white hover:bg-scale-secondary dark:bg-scale-primary hover:dark:bg-scale-secondary"
               type="button"
               title="Start your project"
             ></ButtonSmall>

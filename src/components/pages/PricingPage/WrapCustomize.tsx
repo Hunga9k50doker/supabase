@@ -1,55 +1,69 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import WrapTitle from "@/components/WrapTitle";
 import { wrapCustomize } from "@/constants/WrapCustomize";
 import Image from "next/image";
 import { WrapCustomize as WrapCustomizeConfig } from "@/configs";
 import ButtonSmall from "@/components/ButtonSmall";
+import { useTheme } from "next-themes";
 const WrapCustomize = () => {
+  const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
   return (
-    <div className="sm:py-18 container relative mx-auto px-4 py-16 shadow-sm md:py-24 lg:px-12 lg:pt-32 lg:pb-12">
+    <div>
       <WrapTitle
         title="Easily customizable add-ons"
         description="Level up your Supabase experience with add-ons."
         style={{ marginBottom: "64px !important" }}
-        className_description="text-center"
+        className_description="text-center mt-16 mb-64"
         className_title="text-center"
       />
       <div className="grid lg:grid-cols-3 gap-4 mb-16">
         {wrapCustomize.map((item, index) => (
-          <div className="bg-white dark:bg-scale-300 rounded-[4px]" key={index}>
+          <div
+            className="bg-white dark:bg-scale-1300 rounded-[4px]"
+            key={index}
+          >
             <div className="overflow-hidden rounded-lg">
               <Image
-                src={item.image}
+                src={theme === "light" ? item.image : item.image_dark}
                 alt={item.title}
                 width={300}
                 height={170}
               />
             </div>
             <div className="px-8 -mt-1">
-              <p className="text-xs text-scale-900">
+              <p className="text-xs text-scale-1150">
                 {item.tooltip} ${item.price}
               </p>
               <div className="flex items-center gap-2 mt-2">
                 <Image
-                  src={item.icon}
+                  src={theme === "light" ? item.icon : item.icon_dark}
                   alt={item.title}
                   width={14}
                   height={14}
                 />
-                <span className="text-sm text-scale-1200">{item.title}</span>
+                <span className="text-sm text-scale-1200 dark:text-scale-150">
+                  {item.title}
+                </span>
               </div>
-              <p className="mt-2 text-scale-900 text-xs min-h-[40px] lg:min-h-[50px] lg:max-w-[290px]">
+              <p className="mt-2 text-scale-1150 text-xs min-h-[40px] lg:min-h-[50px] lg:max-w-[290px]">
                 {item.description}
               </p>
-              <div className="flex items-center justify-start mt-4 mb-4 lg:mb-8">
+              <div className="flex items-center justify-between mt-4 mb-4 lg:mb-8">
                 <a href="https://supabase.com/docs/guides/platform/compute-add-ons">
-                  <button
-                    className="relative cursor-pointer inline-flex items-center space-x-2 text-center font-regular transition ease-out duration-200 rounded outline-none transition-all outline-0 focus-visible:outline-4 focus-visible:outline-offset-1   text-scale-1200 bg-scale-100 hover:bg-scale-300 shadow-scale-600 hover:shadow-scale-700 dark:shadow-scale-700 hover:dark:shadow-scale-800 dark:bg-scale-500 dark:hover:bg-scale-600 focus-visible:outline-brand-600  shadow-sm text-xs px-2.5 py-1"
+                  <ButtonSmall
                     type="button"
-                  >
-                    <span className="truncate">Documentation</span>
-                  </button>
+                    title="Documentation"
+                  ></ButtonSmall>
                 </a>
                 {WrapCustomizeConfig.OPTIMIZE_COMPUTER === item.id && (
                   <button className="ml-2 text-primary text-xs hover:underline ">

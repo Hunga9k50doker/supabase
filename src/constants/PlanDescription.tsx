@@ -1,4 +1,4 @@
-interface cardPricingsProps {
+interface PlanDescriptionProps {
   id: number;
   title: string;
   description: string;
@@ -9,7 +9,7 @@ interface cardPricingsProps {
   other_title?: string;
 }
 
-export const cardPricings: Array<cardPricingsProps> = [
+export const planDescription: Array<PlanDescriptionProps> = [
   {
     id: 1,
     title: "free",

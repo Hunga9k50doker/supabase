@@ -31,7 +31,7 @@ const BrandHeader = () => {
                 <div className="flex items-center gap-2">
                   <a href="https://app.supabase.com">
                     <ButtonLarge
-                      className="bg-scale-primary text-white hover:bg-scale-secondary dark:bg-scale-primary dark:hover:bg-scale-secondary"
+                      className="bg-scale-primary text-white hover:bg-scale-secondary dark:bg-scale-primary hover:dark:bg-scale-secondary"
                       type="button"
                       title="Start your project"
                     ></ButtonLarge>

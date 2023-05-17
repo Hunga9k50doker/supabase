@@ -55,10 +55,16 @@ body {
 .pricing_page
 {
     .h2,.p{
-        margin-top: 8px !important;
+        margin-top: 8px;
         margin-bottom: 16px;
     }
     .p{
         font-size: 18px;
     }
+}
+.mt-16{
+    margin-top: 16px !important;
+}
+.mb-64 {
+    margin-bottom: 64px !important;
 }

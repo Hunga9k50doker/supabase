@@ -19,3 +19,7 @@ export { default as ArrowPreIcon } from "./ArrowPreIcon";
 export { default as GithubStrokeIcon } from "./GithubStrokeIcon";
 export { default as CopyIcon } from "./CopyIcon";
 export { default as CheckIcon } from "./CheckIcon";
+export { default as CheckCircleIcon } from "./CheckCircleIcon";
+export { default as SubtractCircleIcon } from "./SubtractCircleIcon";
+export { default as QuestionIcon } from "./QuestionIcon";
+export { default as InforIcon } from "./InforIcon";

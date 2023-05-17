@@ -27,14 +27,14 @@ const WrapTitle = ({
       }
     >
       <h1
-        className={`text-brand-900 text-secondary ${
+        className={`text-secondary da ${
           className_subttile ? className_subttile : ""
         }`}
       >
         {subtitle}
       </h1>
       <h2
-        className={`text-scale-1200 text-xl sm:text-2xl sm:leading-none lg:text-3xl xl:text-4xl h2 ${
+        className={`text-scale-1200 dark:text-scale-150 text-xl sm:text-2xl sm:leading-none lg:text-3xl xl:text-4xl h2 ${
           className_title ? className_title : ""
         }`}
       >

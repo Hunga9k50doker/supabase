@@ -28,7 +28,7 @@ const Footer = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
   return (
-    <footer className="border-scale-500 dark:border-scale-600 border-t bg-scale-50 dark:bg-bgDarkThumbColor">
+    <footer className="border-scale-500 dark:border-scale-1250 border-t bg-scale-50 dark:bg-bgDarkThumbColor">
       <div className="sm:py-18 container relative mx-auto px-6 py-16 md:py-24 lg:px-16 lg:py-24 xl:px-20">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
@@ -92,7 +92,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-scale-500 dark:border-scale-600 mt-32 flex justify-between border-t pt-8 text-textColor">
+        <div className="border-scale-500 dark:border-scale-1250 mt-32 flex justify-between border-t pt-8 text-textColor">
           <small className="small">© Supabase Inc</small>
           <div className="flex items-center">
             <LightThemeIcon />

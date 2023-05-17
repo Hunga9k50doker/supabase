@@ -1,11 +1,23 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import WrapTitle from "@/components/WrapTitle";
 import Image from "next/image";
+import { useTheme } from "next-themes";
 const CostControl = () => {
+  const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
   return (
     <div className="grid lg:grid-cols-2 gap-8 items-center mt-12 lg:mt-8 max-w-6xl mx-auto">
       <WrapTitle
-        className_description="text-md"
+        className_description="text-md text-start"
+        className_title="text-start"
         style={{
           fontSize: "16px !important",
           wordSpacing: "1px",
@@ -24,7 +36,11 @@ const CostControl = () => {
         <div className="">
           <Image
             className="w-full"
-            src={"https://supabase.com/images/pricing/spend-cap-light.png"}
+            src={
+              theme === "light"
+                ? "https://supabase.com/images/pricing/spend-cap-light.png"
+                : "https://supabase.com/images/pricing/spend-cap.png"
+            }
             alt="not found"
             width={448}
             height={265}

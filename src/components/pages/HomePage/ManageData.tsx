@@ -56,7 +56,7 @@ const ManageData = () => {
                   aria-controls="radix-13-content-1"
                   data-state="inactive"
                   id="radix-13-trigger-1"
-                  className=" relative cursor-pointer text-scale-900 flex items-center space-x-2 text-center transition focus:outline-none focus-visible:ring focus-visible:ring-scale-700 focus-visible:border-scale-900 text-xs leading-4 px-3 py-2  hover:text-scale-1200  dark:hover:text-scale-300 dark:text-scale-1100 "
+                  className=" relative cursor-pointer text-scale-900 flex items-center space-x-2 text-center transition focus:outline-none focus-visible:ring focus-visible:ring-scale-700 focus-visible:border-scale-900 text-xs leading-4 px-3 py-2  hover:text-scale-1200  hover:dark:text-scale-300 dark:text-scale-1100 "
                   data-orientation="horizontal"
                   data-radix-collection-item=""
                 >
@@ -69,7 +69,7 @@ const ManageData = () => {
                   aria-controls="radix-13-content-2"
                   data-state="inactive"
                   id="radix-13-trigger-2"
-                  className=" relative cursor-pointer text-scale-900 flex items-center space-x-2 text-center transition focus:outline-none focus-visible:ring focus-visible:ring-scale-700 focus-visible:border-scale-900  text-xs leading-4 px-3 py-2  hover:text-scale-1200 dark:hover:text-scale-300 dark:text-scale-1100"
+                  className=" relative cursor-pointer text-scale-900 flex items-center space-x-2 text-center transition focus:outline-none focus-visible:ring focus-visible:ring-scale-700 focus-visible:border-scale-900  text-xs leading-4 px-3 py-2  hover:text-scale-1200 hover:dark:text-scale-300 dark:text-scale-1100"
                   data-orientation="horizontal"
                   data-radix-collection-item=""
                 >

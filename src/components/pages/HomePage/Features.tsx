@@ -4,6 +4,11 @@
 import React from "react";
 import { services } from "@/constants/Services";
 import { ArrowRightIcon } from "@/assets/icons";
+
+const returnIcon = (icon: any) => {
+  return icon;
+};
+
 const Features = () => {
   return (
     <div className="w-full bg-scale-100 dark:bg-bgDarkThumbColor">
@@ -14,8 +19,8 @@ const Features = () => {
             services.map((service, index) => (
               <div className="mb-10 space-y-4 md:mb-0" key={index}>
                 <div className="flex items-center">
-                  <div className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-scale-1200 text-white ">
-                    {service.icon}
+                  <div className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-scale-1200 dark:bg-scale-150 text-white ">
+                    {returnIcon(service.icon)}
                   </div>
                   <div className="text-scale-1200 ml-4 flex flex-row xl:flex-col dark:text-white">
                     {service.title}
