@@ -27,7 +27,7 @@ const breakpoints = {
 };
 const Comunity = () => {
   return (
-    <div className="w-full bg-scale-50 dark:bg-bgDarkThumbColor">
+    <div className="w-full overflow-x-hidden bg-scale-50 dark:bg-bgDarkThumbColor">
       <div className="sm:py-18 container relative mx-auto px-6 py-16 md:py-24 lg:px-16 lg:py-24 xl:px-20 space-y-16 pb-0">
         <div className="grid grid-cols-12">
           <div className="col-span-12 text-center">

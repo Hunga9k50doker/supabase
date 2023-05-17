@@ -14,6 +14,7 @@ interface CardServiceBuildProps {
   action_url: string;
   subaction?: string;
   subaction_url?: string;
+  className?: string;
 }
 
 interface serviceBuildData {
@@ -22,7 +23,11 @@ interface serviceBuildData {
 
 const CardServiceBuild = ({ serviceBuild }: serviceBuildData) => {
   return (
-    <div className="col-span-12 lg:col-span-6 xl:col-span-4 false">
+    <div
+      className={`col-span-12 lg:col-span-6 xl:col-span-4 false ${
+        serviceBuild.className ? serviceBuild.className : ""
+      }`}
+    >
       <div className="dark:bg-scale-1200 border-scale-400 dark:border-scale-1250 flex h-40 flex-col justify-between rounded rounded-b-none border border-t border-r border-l bg-white p-5">
         <div className="mb-4">
           <h4 className="h6 dark:text-white">{serviceBuild.title}</h4>

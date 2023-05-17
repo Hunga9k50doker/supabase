@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { libraries } from "@/constants/Libraries";
 import WrapTitle from "@/components/WrapTitle";
@@ -16,7 +16,7 @@ import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import CardServiceBuild from "@/components/Cards/CardServiceBuild";
 import { serviceBuilds } from "@/constants/ServicesBuild";
-
+import { community } from "@/constants/Community";
 export const styles: any = {
   Redwood: {
     className: "w-[3rem] left-[15%] top-[5%] ",
@@ -54,6 +54,10 @@ const breakpoints = {
 };
 
 const WrapLibraries = () => {
+  const [serviceData, setServiceData] = useState(serviceBuilds);
+  useEffect(() => {
+    setServiceData(serviceBuilds);
+  }, [serviceBuilds]);
   return (
     <div className="relative">
       <div className="w-full h-full pt-12 pb-0">
@@ -107,6 +111,32 @@ const WrapLibraries = () => {
         </div>
         <div className="mt-4">
           <div className="lg:-mr-32 lg:-ml-32">
+            {/* {serviceData?.length > 0 && (
+              <Swiper
+                breakpoints={breakpoints}
+                loop={true}
+                navigation={{
+                  nextEl: ".next-swiper",
+                  prevEl: ".pre-swiper",
+                }}
+                modules={[Navigation]}
+              >
+                {serviceData.map((serviceBuild, index) => (
+                  <SwiperSlide key={index}>
+                    <CardServiceBuild serviceBuild={serviceBuild} />
+                  </SwiperSlide>
+                ))}
+                <div className="container-fluid mx-auto mt-3 hidden flex-row justify-between md:flex">
+                  <div className="p ml-4 cursor-pointer pre-swiper">
+                    <ArrowPreIcon />
+                  </div>
+                  <div className="p mr-4 cursor-pointer  next-swiper">
+                    <ArrowNextIcon />
+                  </div>
+                </div>
+              </Swiper>
+            )}
+             */}
             <Swiper
               breakpoints={breakpoints}
               loop={true}
@@ -116,10 +146,41 @@ const WrapLibraries = () => {
               }}
               modules={[Navigation]}
             >
-              {serviceBuilds?.length > 0 &&
-                serviceBuilds.map((serviceBuild, index) => (
+              {community?.length > 0 &&
+                community.map((item, index) => (
                   <SwiperSlide key={index}>
-                    <CardServiceBuild serviceBuild={serviceBuild} />
+                    <div className="mr-3 ml-3">
+                      <Link
+                        target="_blank"
+                        className="cursor-pointer"
+                        href={item.twitter_url}
+                      >
+                        <div className="dark:bg-scale-1200 border-scale-300 dark:border-scale-1250 rounded-md border bg-white p-6 drop-shadow-sm ">
+                          <div className="relative flex items-center gap-2">
+                            <div className="h-10 w-10 rounded-full border dark:border-gray-600">
+                              <span className="block w-initial h-initial bg-none opacity-1 p-0 m-0 bỏrder-0 relative">
+                                <p className="w-[20px] h-[20px] absolute top-[-5px] left-[-5px] z-10 bg-brand-600 rounded-full border-white flex items-center justify-center">
+                                  {item.icon}
+                                </p>
+                                <Image
+                                  width={38}
+                                  height={38}
+                                  alt={item.username}
+                                  src={item.avatar}
+                                  className="rounded-full"
+                                />
+                              </span>
+                            </div>
+                            <p className="text-scale-1200 mt-3 text-xs font-medium dark:text-white">
+                              @{item.username}
+                            </p>
+                          </div>
+                          <p className="text-scale-1100 mt-3">
+                            {item.description}
+                          </p>
+                        </div>
+                      </Link>
+                    </div>
                   </SwiperSlide>
                 ))}
               <div className="container-fluid mx-auto mt-3 hidden flex-row justify-between md:flex">
