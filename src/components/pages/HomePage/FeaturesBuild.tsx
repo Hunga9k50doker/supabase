@@ -2,8 +2,7 @@
 "use client";
 import ButtonLarge from "@/components/ButtonLarge";
 import React from "react";
-import { services } from "@/constants/Services";
-import { ArrowRightIcon, GithubStrokeIcon } from "@/assets/icons";
+import { GithubStrokeIcon } from "@/assets/icons";
 import { serviceBuilds } from "@/constants/ServicesBuild";
 import CardServiceBuild from "@/components/Cards/CardServiceBuild";
 const FeaturesBuild = () => {

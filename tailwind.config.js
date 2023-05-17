@@ -33,6 +33,7 @@ module.exports = {
         500: '#e6e8eb', 
         550: '#2e2e2e',
         600: '#dfe3e6',
+        650: '#75715e',
         700: '#e5e7eb',
         750:'#bbbbbb',
         800: '#c1c8cd',
@@ -60,16 +61,22 @@ module.exports = {
       },
       base: '#687076',
     },
-      extend: {
-        fontSize: {
-          'xs': '12px',
-          'sm': '14px',
-          'lg':'18px',
-          'base': '18px',
-          'fs-12': '12px',
-          'fs-14':'14px',
-          'fs-30': '30px',
-        },
+    extend: {
+      fontSize: {
+        'xs': '12px',
+        'sm': '14px',
+        'lg': '18px',
+        'base': '18px',
+        'fs-12': '12px',
+        'fs-14': '14px',
+        'fs-30': '30px',
+      },
+      top: {
+        '15%': '15%',
+      },
+      left: {
+        '15': '15%',
+      },
         lineHeight: {
           'xs': '1rem',
           '4xl': '1rem',

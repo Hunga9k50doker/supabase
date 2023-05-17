@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const DropdownIcon = () => {
   return (
@@ -17,6 +17,6 @@ const DropdownIcon = () => {
       <polyline points="6 9 12 15 18 9"></polyline>
     </svg>
   );
-}
+};
 
-export default DropdownIcon
+export default DropdownIcon;

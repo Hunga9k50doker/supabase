@@ -23,26 +23,3 @@ export const usefulAPI: Array<usefulAPIProps> = [
     description: "Write custom code without deploying or scaling servers.",
   },
 ];
-
-export const usefulAPIButton = [
-  {
-    title: "Create user",
-    active: true,
-  },
-  {
-    title: "Realtime subscriptions",
-    active: false,
-  },
-  {
-    title: "Read a record",
-    active: false,
-  },
-  {
-    title: "Create a record",
-    active: false,
-  },
-  {
-    title: "Update a record",
-    active: false,
-  },
-];

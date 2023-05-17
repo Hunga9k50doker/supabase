@@ -1,11 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
-import ButtonLarge from "@/components/ButtonLarge";
 import React from "react";
-import { services } from "@/constants/Services";
-import { ArrowRightIcon, CopyIcon, GithubStrokeIcon } from "@/assets/icons";
-import { usefulAPI, usefulAPIButton } from "@/constants/UsefulAPI";
-import CardServiceBuild from "@/components/Cards/CardServiceBuild";
+import { ArrowRightIcon, CopyIcon } from "@/assets/icons";
+import { usefulAPI } from "@/constants/UsefulAPI";
+import { tabListUsefulAPI } from "@/constants/Tablist";
+import TabList from "@/components/TabList";
 
 const UsefulAPI = () => {
   return (
@@ -59,33 +58,7 @@ const UsefulAPI = () => {
             data-orientation="horizontal"
             className="w-full justify-between space-y-4"
           >
-            <div
-              role="tablist"
-              aria-orientation="horizontal"
-              className="flex space-x-1 overflow-auto whitespace-nowrap no-scrollbar mask-fadeout-right pb-2"
-              data-orientation="horizontal"
-            >
-              {usefulAPIButton.map((item, index) => (
-                <button
-                  key={index}
-                  type="button"
-                  role="tab"
-                  aria-selected="true"
-                  aria-controls={`radix-5-content-${index}`}
-                  data-state="active"
-                  id={`radix-5-trigger-${index}`}
-                  className={`relative flex items-center space-x-2 text-center transition shadow-sm rounded border-scale-800 border focus:outline-none focus-visible:ring focus-visible:ring-scale-700 focus-visible:border-scale-900  text-xs px-2.5 py-1 ${
-                    item.active
-                      ? "text-scale-1200 bg-scale-600"
-                      : "text-scale-900 cursor-pointer hover:text-scale-1200 hover:border-scale-1200"
-                  }`}
-                  data-orientation="horizontal"
-                  data-radix-collection-item=""
-                >
-                  {item.title}
-                </button>
-              ))}
-            </div>
+            <TabList data={tabListUsefulAPI} />
           </div>
 
           <div className="relative">

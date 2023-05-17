@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap");
 // @import '../assets/fonts/custom-font.woff2';
 
 @tailwind base;
@@ -12,70 +12,78 @@
 //     font-weight: bold;
 // }
 
-*{
-  // margin: 0;
-  // padding: 0;
-  // box-sizing: border-box;
-  font-family:  'Custom-font','Open Sans','Helvetica Neue','Helvetica','Arial','sans-serif';
-  //   font-style: normal;
-      // font-stretch: 100%;
+* {
+  margin: 0;
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  font-weight: 400;
 }
 body {
- 
 }
 
-.h2{
-    font-size:30px;
-    color: '#11181c';
+.h2 {
+  font-size: 30px;
+  color: "#11181c";
 }
-.h3{
-    font-size: 24px;
-}
-
-.h6{
-    color: #11181c ;
-    margin: 0px 0px 16px;
-    line-height: 24px;
-    font-weight: 500;
-    // font-family: 'Open Sans','Helvetica Neue','Helvetica','Arial','sans-serif';
+.h3 {
+  font-size: 24px;
 }
 
-.p{
-    font-size: 14px;
-    line-height:20px;
-    color:
-            #687076;
-            margin: 0px 0px 16px;
-            @media screen and (max-width: 1280px) {
-                font-size: 16px !important;
-            }
+.h6 {
+  color: #11181c;
+  margin: 0px 0px 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #687076;
+  margin: 0px 0px 16px;
+  @media screen and (max-width: 1280px) {
+    font-size: 16px !important;
+  }
 }
 
-.span{
-    font-size: 14px;
+.span {
+  font-size: 14px;
 }
 
-.pricing_page
-{
-    .h2,.p{
-        margin-top: 8px;
-        margin-bottom: 16px;
-    }
-    .p{
-        font-size: 18px;
-    }
+.pricing_page {
+  .h2,
+  .p {
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+  .p {
+    font-size: 18px;
+  }
 }
-.mt-16{
-    margin-top: 16px !important;
+
+//===========margin================
+.mt-0 {
+  margin-top: 0px !important;
+}
+.mt-16 {
+  margin-top: 16px !important;
+}
+.mb-16 {
+  margin-bottom: 16px !important;
 }
 .mb-64 {
-    margin-bottom: 64px !important;
+  margin-bottom: 64px !important;
 }
 
-.fs-16{
-    font-size: 16px !important;
+// ==================font-size==================
+.fs-16 {
+  font-size: 16px !important;
+}
+.fs-18 {
+  font-size: 18px !important;
+}
+.fs-20 {
+  font-size: 20px !important;
 }
 
-.fs-24{
-    font-size: 24px !important;
+.fs-24 {
+  font-size: 24px !important;
 }

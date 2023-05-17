@@ -4,7 +4,6 @@ import Header from "@/components/comon/Header";
 import Navigation from "@/components/comon/Navigation";
 import Footer from "@/components/comon/Footer";
 import ThemeProviders from "./ThemeProviders";
-import StartProject from "@/components/StartProject";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -24,7 +23,6 @@ export default function RootLayout({
           <Header />
           <Navigation />
           {children}
-          <StartProject />
           <Footer />
         </ThemeProviders>
       </body>

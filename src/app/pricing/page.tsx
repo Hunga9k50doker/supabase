@@ -7,6 +7,8 @@ import WrapCustomize from "@/components/pages/PricingPage/WrapCustomize";
 import CostControl from "@/components/pages/PricingPage/CostControl";
 import ComparePlans from "@/components/pages/PricingPage/ComparePlans";
 import FrequentlyQuestion from "@/components/pages/PricingPage/FrequentlyQuestion";
+import StartProject from "@/components/StartProject";
+
 const Pricing = () => {
   return (
     <main className="pricing_page bg-scale-50 dark:bg-bgDarkThumbColor">
@@ -44,6 +46,7 @@ const Pricing = () => {
       </div>
       <ComparePlans />
       <FrequentlyQuestion />
+      <StartProject />
     </main>
   );
 };

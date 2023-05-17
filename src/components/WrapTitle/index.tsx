@@ -3,12 +3,13 @@ import React from "react";
 interface WrapTitleProps {
   title: string;
   subtitle?: string;
-  description: string;
+  description: string | React.ReactNode;
   style?: any;
   className?: string;
   className_subttile?: string;
   className_title?: string;
   className_description?: string;
+  children?: React.ReactNode;
 }
 const WrapTitle = ({
   title,
@@ -19,6 +20,7 @@ const WrapTitle = ({
   className_subttile,
   className_title,
   className_description,
+  children,
 }: WrapTitleProps) => {
   return (
     <div
@@ -48,6 +50,7 @@ const WrapTitle = ({
       >
         {description}
       </p>
+      {children}
     </div>
   );
 };

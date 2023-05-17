@@ -21,7 +21,13 @@ const WrapCombine = () => {
                 <DatabaseIcon />
               </div>
               <CloseIcon />
-              <div className="flex w-fit items-center">{item.icon}</div>
+              <div
+                className={`inline-flex h-8 w-8 items-center justify-center rounded-md ${
+                  index > 0 ? "bg-scale-1200" : ""
+                } text-scale-100`}
+              >
+                {item.icon}
+              </div>
             </div>
             <h4 className="text-[18px] text-scale-1200 dark:text-white lg:text-[20px] mb-4">
               {item.title}

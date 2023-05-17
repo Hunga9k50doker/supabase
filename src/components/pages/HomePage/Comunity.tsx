@@ -2,12 +2,11 @@
 "use client";
 
 import React from "react";
-import { services } from "@/constants/Services";
 import { MessageIcon, ArrowNextIcon, ArrowPreIcon } from "@/assets/icons";
 import Image from "next/image";
 import Link from "next/link";
 import ButtonLarge from "@/components/ButtonLarge";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { community } from "@/constants/Community";
 import "swiper/css";
@@ -73,7 +72,7 @@ const Comunity = () => {
                       className="cursor-pointer"
                       href={item.twitter_url}
                     >
-                      <div className=" dark:bg-scale-1200 border-scale-300 dark:border-scale-1250 rounded-md border bg-white p-6 drop-shadow-sm ">
+                      <div className="dark:bg-scale-1200 border-scale-300 dark:border-scale-1250 rounded-md border bg-white p-6 drop-shadow-sm ">
                         <div className="relative flex items-center gap-2">
                           <div className="h-10 w-10 rounded-full border dark:border-gray-600">
                             <span className="block w-initial h-initial bg-none opacity-1 p-0 m-0 bỏrder-0 relative">

@@ -2,7 +2,6 @@
 "use client";
 
 import React from "react";
-import { services } from "@/constants/Services";
 import { ArrowRightIcon } from "@/assets/icons";
 import { customerStory } from "@/constants/CustomerStory";
 import Link from "next/link";
