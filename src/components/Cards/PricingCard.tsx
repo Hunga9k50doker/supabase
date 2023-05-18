@@ -98,7 +98,8 @@ const PricingCard = ({ data }: dataProps) => {
             </div>
 
             <ButtonLarge
-              className="w-full bg-scale-primary dark:bg-scale-primary hover:bg-scale-secondary text-white justify-center leading-4"
+              className={`w-full bg-scale-primary dark:bg-scale-primary border-scale-secondary border-scale-secondary dark:border-secondary border hover:bg-scale-secondary hover:dark:bg-scale-secondary text-white justify-center leading-4
+              `}
               title={
                 TypeCard.ENTERPRISE !== data.id ? "Get Started" : "Contact Us"
               }

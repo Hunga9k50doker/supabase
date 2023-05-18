@@ -23,7 +23,7 @@ const CostControl = () => {
           wordSpacing: "1px",
           lineHeight: "28px",
         }}
-        className_subttile="bg-primary text-brand-1100 rounded-md bg-opacity-20 inline-block dark:bg-primary dark:text-white py-0.5 px-2 text-xs mt-2"
+        className_subttile="bg-primary text-secondary rounded-md bg-opacity-20 inline-block dark:bg-primary dark:text-white py-0.5 px-2 text-xs mt-2"
         subtitle="Available for Pro plan"
         title="Cost control with spend caps"
         description="The Pro tier has a usage quota included and a spend cap turned on by

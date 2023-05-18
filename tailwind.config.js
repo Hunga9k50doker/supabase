@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     colors: {
       ...colors,
-      primary: "#0ea5e9",
+      primary: "#0284FF",
       white: '#fff',
       black:'#000',
       blackColor: "#11181c",
@@ -22,7 +22,6 @@ module.exports = {
       bgBlackColor: "#2e2e2e",
       bgDarkThumbColor: "#1C1C1C",
       scale: {
-        
         50:'#f8f9fa',
         100: '#fbfdfc',
         150: '#ededed',
@@ -47,7 +46,7 @@ module.exports = {
         1300: '#232323',
         1350:'#3e3e3e',
         1400: '#1c1c1c',
-        primary: "blue",
+        primary: "#0284FF",
         secondary: "#00acee",
       },
       yelow: {
@@ -62,6 +61,9 @@ module.exports = {
       base: '#687076',
     },
     extend: {
+      zIndex: {
+        '500':500,
+      },
       fontSize: {
         'xs': '12px',
         'sm': '14px',
@@ -70,12 +72,6 @@ module.exports = {
         'fs-12': '12px',
         'fs-14': '14px',
         'fs-30': '30px',
-      },
-      top: {
-        '15%': '15%',
-      },
-      left: {
-        '15': '15%',
       },
         lineHeight: {
           'xs': '1rem',

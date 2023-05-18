@@ -1,4 +1,4 @@
-import { DatabaseIcon, AuthenticationIcon } from "@/assets/icons";
+import { DatabaseIcon, AuthenticationIcon, StorageIcon } from "@/assets/icons";
 
 type TableCompareProps = {
   id: number;

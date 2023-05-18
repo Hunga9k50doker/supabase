@@ -58,7 +58,11 @@ body {
     font-size: 18px;
   }
 }
-
+.database_page {
+  .swiper-slide {
+    // width: unset  !important;
+  }
+}
 //===========margin================
 .mt-0 {
   margin-top: 0px !important;

@@ -5,7 +5,6 @@ import { tableCompares } from "@/constants/TableComparePlan";
 import ButtonSmall from "../ButtonSmall";
 import { PlanDescription } from "@/configs";
 import {
-  DatabaseIcon,
   SubtractCircleIcon,
   CheckCircleIcon,
   InforIcon,
@@ -104,10 +103,6 @@ const TableCompare = () => {
                     <span className="text-scale-1200 text-4xl text-normal dark:text-scale-150">
                       Contact us
                     </span>
-
-                    <p className="-mt-2">
-                      <span className="bg-brand-500 text-brand-1100 rounded-md bg-opacity-30 py-0.5 px-2 text-xs "></span>
-                    </p>
                     <p className="mt-8">
                       <a href="https://app.supabase.com/new/new-project">
                         <ButtonSmall
@@ -135,7 +130,7 @@ const TableCompare = () => {
                     <p className="mt-8">
                       <a href="https://app.supabase.com/new/new-project">
                         <ButtonSmall
-                          className="w-full bg-scale-primary dark:bg-scale-primary text-white justify-center"
+                          className="w-full bg-scale-primary dark:bg-scale-primary text-white justify-center hover:bg-scale-secondary hover:dark:bg-scale-secondary border-scale-secondary dark:border-secondary border"
                           type="button"
                           title="Get Started"
                         ></ButtonSmall>
@@ -154,7 +149,7 @@ const TableCompare = () => {
           <React.Fragment key={index}>
             <tr className="flex items-center gap-4 bg-scale-200 bg-scale-50 dark:bg-scale-1400 text-scale-1200 sticky mt-[40px] top-[0px] z-10 py-3 pl-6 text-left text-sm font-medium dark:text-white">
               <React.Fragment>
-                <p className="inline-flex h-8 w-8 items-center justify-center rounded-md  bg-primary dark:bg-primary text-primary">
+                <p className="inline-flex h-8 w-8 items-center justify-center rounded-md  bg-primary dark:bg-primary text-primary dark:text-white text-white">
                   {item.icon}
                 </p>
                 <p>{item.title}</p>
@@ -194,7 +189,7 @@ const TableCompare = () => {
                   <p className="mt-8">
                     <a href="https://app.supabase.com/new/new-project">
                       <ButtonSmall
-                        className="w-full justify-center"
+                        className="w-full justify-center bg-scale-primary dark:bg-scale-primary text-primary dark:text-white text-white hover:dark:bg-scale-secondary hover:bg-scale-secondary border-scale-secondary dark:border-secondary border"
                         type="button"
                         title="Contact us"
                       ></ButtonSmall>
@@ -204,7 +199,7 @@ const TableCompare = () => {
                   <p className="mt-8">
                     <a href="https://app.supabase.com/new/new-project">
                       <ButtonSmall
-                        className="w-full bg-scale-primary dark:bg-scale-primary text-white justify-center"
+                        className="w-full bg-scale-primary dark:bg-scale-primary text-white justify-center hover:dark:bg-scale-secondary hover:bg-scale-secondary border-scale-secondary dark:border-secondary border"
                         type="button"
                         title="Get Started"
                       ></ButtonSmall>

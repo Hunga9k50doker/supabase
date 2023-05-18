@@ -4,16 +4,15 @@ import { tabListTableEditor } from "@/constants/TabList";
 import Image from "next/image";
 import WrapTitle from "@/components/WrapTitle";
 import { ArrowRightIcon, TwitterBlueIcon } from "@/assets/icons";
-
 const WrapEdit = () => {
   return (
     <div>
       <div className="w-full flex justify-center space-y-4">
-        <div className="flex items-center border-b border-scale-400">
-          <button className=" relative cursor-pointer text-scale-900 flex items-center space-x-2 text-center transition focus:outline-none focus-visible:ring focus-visible:ring-scale-700 focus-visible:border-scale-900  text-base px-6 py-3  !text-scale-1200 border-b-2 border-scale-1200 ">
+        <div className="flex items-center border-b border-scale-400 dark:border-scale-1100">
+          <button className="relative cursor-pointer text-scale-900 flex items-center space-x-2 text-center transition focus:outline-none focus-visible:ring focus-visible:ring-scale-700 focus-visible:border-scale-900  text-base px-6 py-3  dark:text-scale-150 border-b-2 border-scale-1200 dark:border-scale-150 ">
             Table Editor
           </button>
-          <button className=" relative cursor-pointer text-scale-900 flex items-center space-x-2 text-center transition focus:outline-none focus-visible:ring focus-visible:ring-scale-700 focus-visible:border-scale-900  text-base px-6 py-3  hover:text-scale-1200 ">
+          <button className=" relative cursor-pointer text-scale-900 dark:text-scale-1100 flex items-center space-x-2 text-center transition focus:outline-none focus-visible:ring focus-visible:ring-scale-700 focus-visible:border-scale-900  text-base px-6 py-3  hover:text-scale-1200 hover:dark:text-scale-300 ">
             SQL Editor
           </button>
         </div>
@@ -28,8 +27,8 @@ const WrapEdit = () => {
                   "https://supabase.com/_next/image?url=%2Fimages%2Fproduct%2Fdatabase%2Ftable-view%2Fspreadsheet-interface.png&w=1920&q=75"
                 }
                 alt="Table Editor"
-                width={446}
-                height={293}
+                width={686}
+                height={450}
               />
             </div>
           </div>
@@ -51,11 +50,11 @@ const WrapEdit = () => {
               </div>
             </WrapTitle>
             <div className="my-8">
-              <div className=" dark:bg-scale-300 border-scale-300 dark:border-scale-400 rounded-md border bg-white p-6 drop-shadow-sm ">
+              <div className="dark:bg-scale-1300 border-scale-300 dark:border-scale-550 rounded-md border bg-white p-6 drop-shadow-sm ">
                 <div className="relative flex items-center gap-2">
                   <div className="h-10 w-10 rounded-full border dark:border-gray-600">
                     <span className="block w-initial h-initial bg-none opacity-1 p-0 m-0 bỏrder-0 relative">
-                      <p className="w-[20px] h-[20px] absolute top-[-5px] left-[-5px] z-10 bg-brand-600 rounded-full border-white flex items-center justify-center">
+                      <p className="w-[20px] h-[20px] absolute top-[-5px] left-[-5px] z-10 bg-secondary rounded-full border-white flex items-center justify-center">
                         <TwitterBlueIcon />
                       </p>
                       <Image
@@ -65,7 +64,7 @@ const WrapEdit = () => {
                         src={
                           "https://supabase.com/_next/image?url=%2Fimages%2Ftwitter-profiles%2Fv6citnk33y2wpeyzrq05_400x400.jpeg&w=1920&q=75"
                         }
-                        className="rounded-full"
+                        className="rounded-full "
                       />
                     </span>
                   </div>

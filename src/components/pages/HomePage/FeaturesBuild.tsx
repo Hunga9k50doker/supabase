@@ -14,7 +14,7 @@ const FeaturesBuild = () => {
           There are many example apps and starter projects to get going
         </p>
         <div className="flex justify-center gap-2 py-4">
-          <a href="/docs/guides/examples">
+          <a href="https://github.com/supabase/docs/guides/examples">
             <ButtonLarge title="View all examples" type="button"></ButtonLarge>
           </a>
           <a href="https://github.com/supabase/supabase/tree/master/examples">

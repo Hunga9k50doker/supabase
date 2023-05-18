@@ -76,7 +76,7 @@ const Comunity = () => {
                         <div className="relative flex items-center gap-2">
                           <div className="h-10 w-10 rounded-full border dark:border-gray-600">
                             <span className="block w-initial h-initial bg-none opacity-1 p-0 m-0 bỏrder-0 relative">
-                              <p className="w-[20px] h-[20px] absolute top-[-5px] left-[-5px] z-10 bg-brand-600 rounded-full border-white flex items-center justify-center">
+                              <p className="w-[20px] h-[20px] absolute top-[-5px] left-[-5px] z-10 bg-secondary rounded-full border-white flex items-center justify-center">
                                 {item.icon}
                               </p>
                               <Image

@@ -19,13 +19,14 @@ interface CardServiceBuildProps {
 
 interface serviceBuildData {
   serviceBuild: CardServiceBuildProps;
+  className?: string;
 }
 
-const CardServiceBuild = ({ serviceBuild }: serviceBuildData) => {
+const CardServiceBuild = ({ serviceBuild, className }: serviceBuildData) => {
   return (
     <div
       className={`col-span-12 lg:col-span-6 xl:col-span-4 false ${
-        serviceBuild.className ? serviceBuild.className : ""
+        className ? className : ""
       }`}
     >
       <div className="dark:bg-scale-1200 border-scale-400 dark:border-scale-1250 flex h-40 flex-col justify-between rounded rounded-b-none border border-t border-r border-l bg-white p-5">
@@ -66,7 +67,7 @@ const CardServiceBuild = ({ serviceBuild }: serviceBuildData) => {
               <ButtonLarge
                 type="button"
                 title="Launch Demo"
-                className="text-xs py-0.5 px-[10px] rounded-md"
+                className="text-xs py-[4px] px-[10px] rounded-md border boder-scale-550"
               >
                 <ArrowNextIcon transform="rotate(-45)" />
               </ButtonLarge>

@@ -31,12 +31,12 @@ const BrandHeader = () => {
                 <div className="flex items-center gap-2">
                   <a href="https://app.supabase.com">
                     <ButtonLarge
-                      className="bg-scale-primary text-white hover:bg-scale-secondary dark:bg-scale-primary hover:dark:bg-scale-secondary"
+                      className="bg-scale-primary text-white hover:bg-scale-secondary dark:bg-scale-primary hover:dark:bg-scale-secondary border-scale-secondary dark:border-secondary border"
                       type="button"
                       title="Start your project"
                     ></ButtonLarge>
                   </a>
-                  <a href="/docs">
+                  <a href="https://github.com/supabase/docs">
                     <ButtonLarge className="" type="button" title="">
                       <BookIcon />
                       Documentation

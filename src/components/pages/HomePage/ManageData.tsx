@@ -47,7 +47,7 @@ const ManageData = () => {
                   data-orientation="horizontal"
                   data-radix-collection-item=""
                 >
-                  <span>Table editor</span>
+                  <span className="text-sm">Table editor</span>
                 </button>
                 <button
                   type="button"
@@ -60,7 +60,7 @@ const ManageData = () => {
                   data-orientation="horizontal"
                   data-radix-collection-item=""
                 >
-                  <span>SQL Editor</span>
+                  <span className="text-sm">SQL Editor</span>
                 </button>
                 <button
                   type="button"
@@ -73,7 +73,7 @@ const ManageData = () => {
                   data-orientation="horizontal"
                   data-radix-collection-item=""
                 >
-                  <span>Auth rules</span>
+                  <span className="text-sm">Auth rules</span>
                 </button>
               </div>
               <div

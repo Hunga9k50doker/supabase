@@ -8,7 +8,7 @@ import WrapLibraries from "@/components/pages/DatabasePage/WrapLibraries";
 import WrapExtendDatabase from "@/components/pages/DatabasePage/WrapExtendDatabase";
 const Database = () => {
   return (
-    <main>
+    <main className="database_page">
       <WrapHeader />
       <WrapCombine />
       <WrapTitle

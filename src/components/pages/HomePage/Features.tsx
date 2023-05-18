@@ -20,7 +20,7 @@ const Features = () => {
             dataService.map((service, index) => (
               <div className="mb-10 space-y-4 md:mb-0" key={index}>
                 <div className="flex items-center">
-                  <div className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-scale-1200 dark:bg-scale-150 text-scale-50 ">
+                  <div className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-scale-1200 dark:bg-scale-150 text-scale-50  dark:text-scale-1300">
                     {service.icon}
                   </div>
                   <div className="text-scale-1200 ml-4 flex flex-row xl:flex-col dark:text-white">

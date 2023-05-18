@@ -5,7 +5,7 @@ const StartProject = () => {
     <div
       className="
         bg-scale-50 grid grid-cols-12 items-center gap-4 border-t py-32 text-center
-         px-16 dark:bg-bgDarkThumbColor  dark:border-scale-1250
+         px-16 dark:bg-bgDarkThumbColor  dark:border-scale-1250 w-full
       "
     >
       <div className="col-span-12">
@@ -22,7 +22,7 @@ const StartProject = () => {
       <div className="col-span-12 mt-4">
         <a href="https://app.supabase.com/">
           <ButtonLarge
-            className="bg-scale-primary hover:bg-secondary dark:bg-scale-primary hover:dark:bg-secondary text-white px-4 line-height-1.5"
+            className="bg-scale-primary hover:bg-secondary dark:bg-scale-primary hover:dark:bg-secondary text-white px-4 line-height-1.5 border-scale-secondary dark:border-secondary border"
             type="button"
             title="Start your project"
           ></ButtonLarge>

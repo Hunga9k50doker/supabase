@@ -27,13 +27,13 @@ const UsefulAPI = () => {
                 >
                   <div className="lg:mt-5">
                     <dt>
-                      <h4 className="text-scale-1200 dark:text-scale-100 mb-4 text-base">
+                      <h4 className="text-scale-1200 dark:text-scale-100 mb-4 text-md">
                         {item.title}
                       </h4>
                       <p className="p">{item.description}</p>
                       <a
                         className="text-scale-1100 hover:text-scale-1200 mt-3 block cursor-pointer text-xs"
-                        href="/docs/client/generating-types"
+                        href="https://github.com/supabase/docs/client/generating-types"
                       >
                         <div className="group flex items-center gap-1">
                           <span className="sr-only">

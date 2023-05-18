@@ -45,7 +45,7 @@ const CustomerStory = () => {
       <div className="mt-12">
         <a
           className="text-scale-1100 hover:text-scale-1200 mt-3 block cursor-pointer text-xs"
-          href="/customers"
+          href="https://github.com/supabase/customers"
         >
           <div className="group flex items-center gap-1">
             <span className="sr-only">Explore more about /customers</span>

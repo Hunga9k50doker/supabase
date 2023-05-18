@@ -26,8 +26,8 @@ const TabList = (props: DataTabList) => {
           id={`radix-5-trigger-${index}`}
           className={`relative flex items-center space-x-2 text-center transition shadow-sm rounded border-scale-800 border focus:outline-none focus-visible:ring focus-visible:ring-scale-700 focus-visible:border-scale-900  text-xs px-2.5 py-1 ${
             item.active
-              ? "text-scale-1200 bg-scale-600"
-              : "text-scale-900 cursor-pointer hover:text-scale-1200 hover:border-scale-1200"
+              ? "text-scale-1200 bg-scale-600 dark:bg-scale-1300 dark:border-scale-1100 dark:text-scale-150"
+              : "text-scale-900 cursor-pointer hover:text-scale-1200 hover:border-scale-1200 hover:dark:border-scale-150 hover:dark:text-scale-150 dark:border-scale-1100 dark:text-scale-1100"
           }`}
           data-orientation="horizontal"
           data-radix-collection-item=""

@@ -13,7 +13,7 @@ const WrapExtendDatabase = () => {
         <div className="col-span-12 mb-8 lg:col-span-6 xl:col-span-5">
           <WrapTitle
             className_title="mt-0 mb-16 fs-24"
-            className_description="mt-0 mb-16"
+            className_description="mt-0 mb-16 fs-16"
             title="Extend your database"
             description={`Supabase works natively with Postgres extensions.`}
           >
@@ -63,7 +63,7 @@ const WrapExtendDatabase = () => {
             </div>
           </div>
 
-          <div className="bg-scale-100 mt-2 dark:bg-scale-300 border-scale-500 overflow-hidden rounded-md border p-8">
+          <div className="bg-scale-100 mt-2 dark:bg-scale-1300 border-scale-500 dark:border-scale-550 overflow-hidden rounded-md border p-8">
             <WrapTitle
               className_title="fs-18 mb-8"
               className_description="mb-16"

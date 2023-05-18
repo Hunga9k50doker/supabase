@@ -1,8 +1,19 @@
+"use client";
 import { DatabaseIcon, BookIcon } from "@/assets/icons";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ButtonLarge from "@/components/ButtonLarge";
 import Image from "next/image";
+import { useTheme } from "next-themes";
 const WrapHeader = () => {
+  const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
   return (
     <div className="container relative mx-auto px-6 pt-16 pb-0 sm:px-16 lg:pt-32 xl:px-20">
       <div className="grid grid-cols-12">
@@ -12,7 +23,9 @@ const WrapHeader = () => {
               <div className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-scale-1200 text-scale-100 ">
                 <DatabaseIcon />
               </div>
-              <span className="text-scale-1200">Database</span>
+              <span className="text-scale-1200 dark:text-scale-150">
+                Database
+              </span>
             </div>
             <h1 className="text-scale-1200 text-2xl sm:text-3xl sm:leading-none dark:text-white lg:text-4xl">
               Open Source SQL Database <br /> (without the hassle)
@@ -31,7 +44,7 @@ const WrapHeader = () => {
             <div className="flex items-center gap-2">
               <a href="https://app.supabase.com">
                 <ButtonLarge
-                  className="bg-scale-primary text-white hover:bg-scale-secondary dark:bg-scale-primary hover:dark:bg-scale-secondary"
+                  className="bg-scale-primary text-white hover:bg-scale-secondary dark:bg-scale-primary hover:dark:bg-scale-secondary border-scale-secondary dark:border-secondary border"
                   type="button"
                   title="Start your project"
                 ></ButtonLarge>
@@ -49,7 +62,9 @@ const WrapHeader = () => {
           <div className="w-full">
             <Image
               src={
-                "https://supabase.com/_next/image?url=%2Fimages%2Fproduct%2Fdatabase%2Fheader--light-2.png&w=1920&q=75"
+                theme === "dark"
+                  ? "https://supabase.com/_next/image?url=%2Fimages%2Fproduct%2Fdatabase%2Fheader--dark-2.png&w=1920&q=75"
+                  : "https://supabase.com/_next/image?url=%2Fimages%2Fproduct%2Fdatabase%2Fheader--light-2.png&w=1920&q=75"
               }
               width={532}
               height={347}

@@ -8,7 +8,7 @@ import {
 } from "@/assets/icons";
 import React from "react";
 interface ServiceProps {
-  icon: any;
+  icon: React.ReactNode;
   title: string;
   description: string;
 }
