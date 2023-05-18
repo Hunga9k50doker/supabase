@@ -38,7 +38,11 @@ const CustomerStory = () => {
               href={item.url}
               className="col-span-12 md:col-span-4 cursor-pointer"
             >
-              <CustomerStoryCard title={item.title} image={item.image} />
+              <CustomerStoryCard
+                title={item.title}
+                image={item.image}
+                image_dark={item.image_dark}
+              />
             </Link>
           ))}
       </div>
