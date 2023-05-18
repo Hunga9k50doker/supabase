@@ -1,7 +1,5 @@
 import React from "react";
 import WrapTitle from "@/components/WrapTitle";
-import { tableCompares } from "@/constants/TableComparePlan";
-import { wrapCustomize } from "@/constants/WrapCustomize";
 import TableCompare from "@/components/TableCompare";
 const ComparePlans = () => {
   return (

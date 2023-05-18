@@ -20,46 +20,47 @@ import "swiper/css/pagination";
 import CardServiceBuild from "@/components/Cards/CardServiceBuild";
 import { serviceBuilds } from "@/constants/ServicesBuild";
 import { community } from "@/constants/Community";
-export const styles: any = {
-  Redwood: {
-    className: "w-[3rem] left-[15%] top-[5%] ",
-  },
-  VueJs: {
-    className: "w-[3rem] right-[33%] top-[3%]",
-  },
-  React: {
-    className: "w-[3rem] right-[13%] top-[8%]",
-  },
-  Angular: {
-    className: "w-[3rem] right-[21%] top-[28%]",
-  },
-  Electron: {
-    className: "w-[3rem] left-[17%] top-[25%]",
-  },
-  NuxtJs: {
-    className: "w-[3rem] right-[5%] top-[28%]",
-  },
-  Flutter: {
-    className: "w-[3rem] left-[5%] top-[15%]",
-  },
-};
 
-const breakpoints = {
-  640: {
-    slidesPerView: 2,
-    spaceBetween: 20,
-  },
-  1204: {
-    slidesPerView: 3,
-    spaceBetween: 20,
-  },
-  1200: {
-    slidesPerView: 4,
-    spaceBetween: 20,
-  },
-};
 
 const WrapLibraries = () => {
+  const styles: any = {
+    Redwood: {
+      className: "w-[3rem] left-[15%] top-[5%] ",
+    },
+    VueJs: {
+      className: "w-[3rem] right-[33%] top-[3%]",
+    },
+    React: {
+      className: "w-[3rem] right-[13%] top-[8%]",
+    },
+    Angular: {
+      className: "w-[3rem] right-[21%] top-[28%]",
+    },
+    Electron: {
+      className: "w-[3rem] left-[17%] top-[25%]",
+    },
+    NuxtJs: {
+      className: "w-[3rem] right-[5%] top-[28%]",
+    },
+    Flutter: {
+      className: "w-[3rem] left-[5%] top-[15%]",
+    },
+  };
+
+  const breakpoints = {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1204: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+  };
   const [serviceData, setServiceData] = useState(serviceBuilds);
   useEffect(() => {
     setServiceData(serviceBuilds);
