@@ -15,8 +15,8 @@ import { categoriesNav } from "@/constants/CategoriesNav";
 import NavigationMobile from "@/components/NavigationMobile";
 const Navigation = () => {
   const { theme } = useTheme();
-  const [mounted, setMounted] = useState(false);
   const [isOpenMenu, setIsOpenMenu] = useState(false);
+  const [mounted, setMounted] = useState(false);
   useEffect(() => {
     setMounted(true);
   }, []);

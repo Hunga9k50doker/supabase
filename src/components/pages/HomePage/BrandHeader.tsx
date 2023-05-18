@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Image from "next/image";
 import { Felicis, Coatue, YC, Mozilla } from "@/assets/imgs";
@@ -47,24 +48,24 @@ const BrandHeader = () => {
                   <small className="small text-xs">backed by</small>
                   <div className="w-full sm:max-w-lg lg:ml-0">
                     <div className="flex flex-wrap items-center justify-start gap-y-8 sm:flex-nowrap">
-                      <Image
-                        className="h-8 pr-5 sm:h-8 md:pr-10"
-                        src={YC}
+                      <img
+                        className="relative h-8 pr-5 sm:h-8 md:pr-10"
+                        src={YC.src}
                         alt="Y Combinator"
                       />
-                      <Image
+                      <img
                         className="relative h-5 pr-5 sm:h-5 md:pr-10"
-                        src={Mozilla}
+                        src={Mozilla.src}
                         alt="Mozilla"
                       />
-                      <Image
+                      <img
                         className="relative h-5 pr-5 sm:h-5 md:pr-10"
-                        src={Coatue}
+                        src={Coatue.src}
                         alt="Coatue"
                       />
-                      <Image
+                      <img
                         className="relative h-6 pr-5 sm:h-6 md:pr-10"
-                        src={Felicis}
+                        src={Felicis.src}
                         alt="Felicis"
                       />
                     </div>

@@ -25,7 +25,6 @@ const Footer = () => {
     return null;
   }
   const handleTheme = () => {
-    if (theme === "system") setTheme("dark");
     setTheme(theme === "light" ? "dark" : "light");
   };
   return (

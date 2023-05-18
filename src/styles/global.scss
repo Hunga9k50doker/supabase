@@ -1,23 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap");
-// @import '../assets/fonts/custom-font.woff2';
+// @import "../assets/fonts/custom-font.woff2";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 // @font-face {
-//     font-family: "Custom-font";
-//     src: local("Custom-font"),
-//         url("../assets/fonts/custom-font.woff2") format("truetype");
-//     font-weight: bold;
+//   font-family: "Custom-font";
+//   src: local("Custom-font"),
+//     url("../assets/fonts/custom-font.woff2") format("woff2");
+//   font-weight: bold;
 // }
 
 * {
   margin: 0;
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
   font-weight: 400;
-}
-body {
 }
 
 .h2 {
@@ -58,11 +56,7 @@ body {
     font-size: 18px;
   }
 }
-.database_page {
-  .swiper-slide {
-    // width: unset  !important;
-  }
-}
+
 //===========margin================
 .mt-0 {
   margin-top: 0px !important;

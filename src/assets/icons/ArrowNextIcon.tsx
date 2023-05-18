@@ -6,7 +6,7 @@ const ArrowNextIcon = (props: any) => {
       xmlns="http://www.w3.org/2000/svg"
       width="21"
       height="21"
-      transform={props.transform}
+      transform={props.transform ? props.transform : ""}
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"

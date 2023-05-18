@@ -9,7 +9,7 @@ const ThunderIcon = () => {
       fill="none"
       viewBox="0 0 24 24"
       aria-hidden="true"
-      stroke-width="2"
+      strokeWidth="2"
     >
       <path
         strokeLinecap="round"

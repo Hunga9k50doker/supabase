@@ -28,7 +28,7 @@ const renderData = (data: any) => {
       return (
         <p className="flex items-center gap-2">
           <InforIcon />
-          <p className="text-xs">{data.title}</p>
+          <span className="text-xs">{data.title}</span>
         </p>
       );
     default:
@@ -88,8 +88,6 @@ const TableCompare = () => {
             </th>
           ))}
         </tr>
-      </tbody>
-      <tbody>
         <tr className="descriptions">
           <th
             className="text-scale-1200 w-1/3 px-6 pt-2 pb-2 text-left text-sm font-normal"
@@ -114,7 +112,7 @@ const TableCompare = () => {
                     </p>
                   </div>
                 ) : (
-                  <p className="flex flex-col justify-between h-full">
+                  <div className="flex flex-col justify-between h-full">
                     <span className="text-scale-1200 text-5xl text-start dark:text-scale-150">
                       ${item.price}
                     </span>
@@ -136,23 +134,20 @@ const TableCompare = () => {
                         ></ButtonSmall>
                       </a>
                     </p>
-                  </p>
+                  </div>
                 )}
               </React.Fragment>
             </th>
           ))}
         </tr>
-      </tbody>
-
-      <tbody className="">
         {tableCompares.map((item, index) => (
           <React.Fragment key={index}>
             <tr className="flex items-center gap-4 bg-scale-200 bg-scale-50 dark:bg-scale-1400 text-scale-1200 sticky mt-[40px] top-[0px] z-10 py-3 pl-6 text-left text-sm font-medium dark:text-white">
               <React.Fragment>
-                <p className="inline-flex h-8 w-8 items-center justify-center rounded-md  bg-primary dark:bg-primary text-primary dark:text-white text-white">
+                <td className="inline-flex h-8 w-8 items-center justify-center rounded-md  bg-primary dark:bg-primary text-primary dark:text-white text-white">
                   {item.icon}
-                </p>
-                <p>{item.title}</p>
+                </td>
+                <td>{item.title}</td>
               </React.Fragment>
             </tr>
             {item.items.map((element, index) => (
@@ -175,8 +170,6 @@ const TableCompare = () => {
             ))}
           </React.Fragment>
         ))}
-      </tbody>
-      <tbody>
         <tr className="descriptions">
           <th
             className="text-scale-1200 w-1/3 px-6 pt-2 pb-2 text-left text-sm font-normal"
