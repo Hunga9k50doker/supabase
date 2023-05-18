@@ -2,8 +2,8 @@
 
 1. Clone repo: <https://github.com/Hunga9k50doker/supabase.git>
 2. Install module: ``npm install``
-2. Run app: ``npm run dev``
-3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result
+3. Run app: ``npm run dev``
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result
 
 ## Deploy on Vercel
 
