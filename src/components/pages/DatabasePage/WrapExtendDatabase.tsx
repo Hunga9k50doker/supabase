@@ -6,6 +6,7 @@ import { ArrowNextIcon, CopyIcon } from "@/assets/icons";
 import { tabListEtandDatabase } from "@/constants/TabList";
 import TabList from "@/components/TabList";
 import ButtonLarge from "@/components/ButtonLarge";
+import GeographicalBlock from "@/components/CodeBlocks/GeographicalBlock";
 const WrapExtendDatabase = () => {
   return (
     <div className="sm:py-18 container relative mx-auto px-6 py-16 md:py-24 lg:px-16 lg:py-24 xl:px-20 lg:py-48">
@@ -34,35 +35,7 @@ const WrapExtendDatabase = () => {
         </div>
         <div className="col-span-12 mt-8 lg:col-span-6 lg:col-start-7 lg:mt-0">
           <TabList data={tabListEtandDatabase} />
-          <div className="relative">
-            <pre className="rounded-t-lg rounded-b-lg bg-[#181818] overflow-x-auto px-[21px] py-[24px] text-scale-50 text-sm leading-1.4 tracking-[0.5px]">
-              <code className="language-sql">
-                <span className="text-secondary mr-2">SELECT</span>
-                <span> superhero.name</span>
-                <br />
-                <span className="text-secondary mr-2">FROM</span>
-                <span> city, superhero</span>
-                <br />
-                <span className="text-secondary mr-2">WHERE</span>
-                <span> ST_Contains(city.geom, superhero.geom)</span>
-                <br />
-                <span className="text-secondary mr-2">AND</span>
-                <span> city.name </span>
-                <span className="hljs-operator">=</span>
-                <span className="text-primary">'Gotham'</span>
-                <span>;</span>{" "}
-              </code>
-            </pre>
-            <div className="dark absolute right-2 top-2">
-              <button
-                className="relative cursor-pointer inline-flex items-center space-x-2 text-center font-regular transition ease-out duration-200 rounded outline-none transition-all outline-0 focus-visible:outline-4 focus-visible:outline-offset-1   text-scale-100 hover:bg-scale-500 shadow-none focus-visible:outline-scale-700  text-xs px-2.5 py-1"
-                type="button"
-              >
-                <CopyIcon />
-              </button>
-            </div>
-          </div>
-
+          <GeographicalBlock />
           <div className="bg-scale-100 mt-2 dark:bg-scale-1300 border-scale-500 dark:border-scale-550 overflow-hidden rounded-md border p-8">
             <WrapTitle
               className_title="fs-18 mb-8"
